@@ -77,11 +77,16 @@
     <Content Include="contactus.aspx" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\images.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\logo.png" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="producttype.aspx" />
     <Content Include="register.aspx" />
     <Content Include="search.aspx" />
+    <Content Include="Style.css" />
     <Content Include="viewall.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

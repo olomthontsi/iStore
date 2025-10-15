@@ -1,17 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\olomt\\source\\repos\\Takealot\\",
+  "WorkspaceRootPath": "C:\\Users\\siyom\\source\\repos\\Takealot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|c:\\users\\olomt\\source\\repos\\takealot\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_SIYOM_SOURCE_REPOS_TAKEALOT_APP_DATA_ISTORE.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|c:\\users\\siyom\\source\\repos\\takealot\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|solutionrelative:site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|c:\\users\\olomt\\source\\repos\\takealot\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|C:\\Users\\siyom\\source\\repos\\Takealot\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|solutionrelative:index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|c:\\users\\olomt\\source\\repos\\takealot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|C:\\Users\\siyom\\source\\repos\\Takealot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{9EB0D143-DB30-4C7C-965A-8397DC022E9B}|Takealot.csproj|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -22,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,24 +45,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_SIYOM_SOURCE_REPOS_TAKEALOT_APP_DATA_ISTORE.MDF/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-15T10:27:33.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "index.aspx",
-              "DocumentMoniker": "C:\\Users\\olomt\\source\\repos\\Takealot\\index.aspx",
+              "DocumentMoniker": "C:\\Users\\siyom\\source\\repos\\Takealot\\index.aspx",
               "RelativeDocumentMoniker": "index.aspx",
-              "ToolTip": "C:\\Users\\olomt\\source\\repos\\Takealot\\index.aspx",
+              "ToolTip": "C:\\Users\\siyom\\source\\repos\\Takealot\\index.aspx",
               "RelativeToolTip": "index.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-10-14T20:03:20.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Style.css",
-              "DocumentMoniker": "C:\\Users\\olomt\\source\\repos\\Takealot\\Style.css",
+              "DocumentMoniker": "C:\\Users\\siyom\\source\\repos\\Takealot\\Style.css",
               "RelativeDocumentMoniker": "Style.css",
-              "ToolTip": "C:\\Users\\olomt\\source\\repos\\Takealot\\Style.css",
+              "ToolTip": "C:\\Users\\siyom\\source\\repos\\Takealot\\Style.css",
               "RelativeToolTip": "Style.css",
               "ViewState": "AgIAAKIAAABAXIXOYMUSwKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -68,11 +81,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Site1.Master",
-              "DocumentMoniker": "C:\\Users\\olomt\\source\\repos\\Takealot\\Site1.Master",
+              "DocumentMoniker": "C:\\Users\\siyom\\source\\repos\\Takealot\\Site1.Master",
               "RelativeDocumentMoniker": "Site1.Master",
-              "ToolTip": "C:\\Users\\olomt\\source\\repos\\Takealot\\Site1.Master",
+              "ToolTip": "C:\\Users\\siyom\\source\\repos\\Takealot\\Site1.Master",
               "RelativeToolTip": "Site1.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",

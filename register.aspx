@@ -26,7 +26,7 @@
         <div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtpassword" ErrorMessage="RequiredFieldValidator" ForeColor="Red">This field is required</asp:RequiredFieldValidator>
         </div>
-         <asp:TextBox ID="txtNumber" runat="server" CssClass="input" placeholder="Email"></asp:TextBox>
+         <asp:TextBox ID="txtNumber" runat="server" CssClass="input" placeholder="Number"></asp:TextBox>
         <div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtemail" ErrorMessage="RequiredFieldValidator" ForeColor="Red">This field is required</asp:RequiredFieldValidator>
         </div>
@@ -53,8 +53,7 @@
                 <asp:Parameter Name="Id" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
-                <asp:Parameter Name="Id" Type="Int32" />
-                <asp:Parameter Name="User_Id" Type="String" />
+                <asp:controlParameter ControlID="txtid" Name="Id" Type="Int32" />
                 <asp:controlParameter ControlID="txtname" Name="Name" Type="String" />
                 <asp:controlParameter ControlID="txtsurname" Name="Last_Name" Type="String" />
                 <asp:controlParameter ControlID="txtusername" Name="User_Name" Type="String" />

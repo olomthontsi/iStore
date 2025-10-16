@@ -13,5 +13,10 @@ namespace Takealot
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.Insert();
+        }
     }
 }

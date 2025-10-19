@@ -39,7 +39,7 @@
                                       <li class="nav-item">
                                         <a class="nav-link" href="#">About Us</a>
                                            <li class="nav-item">
-                                         <a class="nav-link" href="#">Contact Us</a>
+                                         <a class="nav-link" href="contactus.aspx">Contact Us</a>
                                       </li>
                                     </ul>
                                     &nbsp;<asp:ImageButton ID="ImageButton2" runat="server" CssClass="login" ImageUrl="~/images/login.png" OnClick="ImageButton2_Click"/>
@@ -80,7 +80,7 @@
             <div class="footer-column">
                 <h5>Information</h5>
                 <p><a href="#">About Us</a></p>
-                <p><a href="#">Contact Us</a></p>
+                <p><a href="contactus.aspx">Contact Us</a></p>
                 <p><a href="#">FAQ</a></p>
                 <p><a href="#">Terms & Conditions</a></p>
             </div>

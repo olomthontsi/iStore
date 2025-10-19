@@ -74,14 +74,20 @@
     <Content Include="App_Data\istore_log.ldf">
       <DependentUpon>istore.mdf</DependentUpon>
     </Content>
-    <Content Include="contactus.aspx" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
     <Content Include="EditUser.aspx" />
     <Content Include="images\cart.png" />
+    <Content Include="images\clock.png" />
+    <Content Include="images\CONTACT.jpg" />
+    <Content Include="images\email.png" />
+    <Content Include="images\hours.jpg" />
     <Content Include="images\images.png" />
+    <Content Include="images\IPHONE BANNER.png" />
+    <Content Include="images\location.png" />
     <Content Include="images\login.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\phone.png" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="producttype.aspx" />
@@ -119,13 +125,6 @@
     </Compile>
     <Compile Include="adminhome.aspx.designer.cs">
       <DependentUpon>adminhome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="contactus.aspx.cs">
-      <DependentUpon>contactus.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="contactus.aspx.designer.cs">
-      <DependentUpon>contactus.aspx</DependentUpon>
     </Compile>
     <Compile Include="delete.aspx.cs">
       <DependentUpon>delete.aspx</DependentUpon>

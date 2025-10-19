@@ -142,9 +142,9 @@ body, html {
         transition: background 0.3s;
     }
 
-        .subscribe-form button:hover {
-            background-color: #e1e1e1;
-        }
+ .subscribe-form button:hover {
+  background-color: #e1e1e1;
+}
 
 .footer-top-logo img {
     height: 50px;
@@ -161,4 +161,4 @@ body, html {
     .footer-content {
         flex-direction: column;
     }
-}
+} 

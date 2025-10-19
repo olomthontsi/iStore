@@ -77,6 +77,7 @@
     <Content Include="contactus.aspx" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
+    <Content Include="EditUser.aspx" />
     <Content Include="images\cart.png" />
     <Content Include="images\images.png" />
     <Content Include="images\login.png" />
@@ -139,6 +140,13 @@
     </Compile>
     <Compile Include="details.aspx.designer.cs">
       <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

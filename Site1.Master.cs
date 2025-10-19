@@ -13,5 +13,10 @@ namespace Takealot
         {
 
         }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("login.aspx");
+        }
     }
 }

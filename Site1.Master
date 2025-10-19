@@ -42,7 +42,7 @@
                                          <a class="nav-link" href="#">Contact Us</a>
                                       </li>
                                     </ul>
-                                    &nbsp;<asp:ImageButton ID="ImageButton2" runat="server" CssClass="login" ImageUrl="~/images/login.png"/>
+                                    &nbsp;<asp:ImageButton ID="ImageButton2" runat="server" CssClass="login" ImageUrl="~/images/login.png" OnClick="ImageButton2_Click"/>
 &nbsp;<asp:ImageButton ID="ImageButton3" runat="server" CssClass="cart" ImageUrl="~/images/cart.png"  />
 &nbsp;<asp:TextBox ID="search" CssClass="textbox" runat="server"></asp:TextBox>
                                     &nbsp;<asp:ImageButton ID="ImageButton1" runat="server" CssClass="search"  ImageUrl="~/images/images.png" />
@@ -90,7 +90,7 @@
                 <p>Subscribe for latest product and service updates.</p>
 
                 <div class="subscribe-form">
-                    <input type="email" placeholder="Enter email..." required />
+                    <input type="email" placeholder="Enter email..."  />
                     <button type="submit">Subscribe</button>
                 </div>
             </div>

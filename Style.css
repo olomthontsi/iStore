@@ -158,9 +158,9 @@ html, body, form {
         transition: background 0.3s;
     }
 
-        .subscribe-form button:hover {
-            background-color: #e1e1e1;
-        }
+ .subscribe-form button:hover {
+  background-color: #e1e1e1;
+}
 
 .footer-top-logo img {
     height: 50px;
@@ -178,6 +178,7 @@ html, body, form {
     .footer-content {
         flex-direction: column;
     }
+<<<<<<< HEAD
 }
 
 /* Fix Bootstrap navbar spacing */
@@ -194,3 +195,6 @@ form {
     margin: 0;
     padding: 0;
 }
+=======
+} 
+>>>>>>> 34d1255821c02953003c7a8cd9938ffb828d12d3

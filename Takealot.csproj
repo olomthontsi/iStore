@@ -83,6 +83,7 @@
     <Content Include="images\logo.png" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="membership.aspx" />
     <Content Include="producttype.aspx" />
     <Content Include="register.aspx" />
     <Content Include="search.aspx" />
@@ -153,6 +154,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership.aspx.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership.aspx.designer.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
     </Compile>
     <Compile Include="producttype.aspx.cs">
       <DependentUpon>producttype.aspx</DependentUpon>

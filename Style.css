@@ -162,3 +162,47 @@ body, html {
         flex-direction: column;
     }
 }
+
+/* ==========================
+   Signup Styles
+   ========================== */
+#signup .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+#signup .btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+    #signup .btn-success:hover {
+        background-color: #218838;
+    }
+
+/* Change modal width */
+.modal-dialog {
+    max-width: 500px;
+}
+
+/* Customize button colors */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+
+l
+.form-label {
+    color: #333;
+    font-weight: 600;
+}
+
+
+body {
+    background: linear-gradient(135deg, #e6f2ff, #f9f9f9);
+}

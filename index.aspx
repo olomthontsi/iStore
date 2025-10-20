@@ -3,5 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-    i added a table - here only and put a content place holder &nbsp;</p>
+    i added a table - here only and put a content place holder </p>
 </asp:Content>

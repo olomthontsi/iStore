@@ -98,6 +98,43 @@
     <Content Include="images\login.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\phone.png" />
+    <Content Include="images\products\airtag.png" />
+    <Content Include="images\products\Apple HomePod.jpg" />
+    <Content Include="images\products\appletv.jpg" />
+    <Content Include="images\products\DJIosmo.png" />
+    <Content Include="images\products\gopro.jpg" />
+    <Content Include="images\products\imac.png" />
+    <Content Include="images\products\ipadair11.jpg" />
+    <Content Include="images\products\iphone13black.jpg" />
+    <Content Include="images\products\iphone13blue.jpg" />
+    <Content Include="images\products\iphone13promaxblack.jpg" />
+    <Content Include="images\products\iphone13promaxblue.jpg" />
+    <Content Include="images\products\iphone13promaxwhite.jpg" />
+    <Content Include="images\products\iphone13white.jpg" />
+    <Content Include="images\products\iphone14black.jpg" />
+    <Content Include="images\products\iphone14blue.jpg" />
+    <Content Include="images\products\iphone14red.jpg" />
+    <Content Include="images\products\iphone15black.jpg" />
+    <Content Include="images\products\iphone15blue.jpg" />
+    <Content Include="images\products\iphone15green.jpg" />
+    <Content Include="images\products\iphone15problack.jpg" />
+    <Content Include="images\products\iphone15prosilver.jpg" />
+    <Content Include="images\products\iphone15prowhite.jpg" />
+    <Content Include="images\products\iphone16black.png" />
+    <Content Include="images\products\iphone16pink.png" />
+    <Content Include="images\products\iphone16problack.png" />
+    <Content Include="images\products\iphone16progold.png" />
+    <Content Include="images\products\iphone16prowhite.png" />
+    <Content Include="images\products\iphone16white.png" />
+    <Content Include="images\products\iphone17black.jpg" />
+    <Content Include="images\products\iphone17green.jpg" />
+    <Content Include="images\products\iphone17problue.jpg" />
+    <Content Include="images\products\iphone17progold.jpg" />
+    <Content Include="images\products\iphone17prosilver.jpg" />
+    <Content Include="images\products\iphone17silver.jpg" />
+    <Content Include="images\products\iphoneairblack.jpg" />
+    <Content Include="images\products\iphoneairblue.jpg" />
+    <Content Include="images\products\iphoneairwhite.jpg" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="producttype.aspx" />
@@ -226,6 +263,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

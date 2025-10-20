@@ -74,4 +74,44 @@
         </asp:SqlDataSource>
 
     </div>
+    <div>
+
+        <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2" RepeatDirection="Horizontal" RepeatColumns="4">
+            <ItemTemplate>
+                <asp:ImageButton ID="ImageButton4" runat="server" Height="300px" ImageUrl='<%# Eval("Images") %>' Width="300px" />
+                <br />
+                <br />
+                Model_Name:
+                <asp:Label ID="Model_NameLabel" runat="server" Text='<%# Eval("Model_Name") %>' />
+                <br />
+                Storage_capacity:
+                <asp:Label ID="Storage_capacityLabel" runat="server" Text='<%# Eval("Storage_capacity") %>' />
+                <br />
+                Colour:
+                <asp:Label ID="ColourLabel" runat="server" Text='<%# Eval("Colour") %>' />
+                <br />
+                Price:
+                <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
+                <br />
+                Quantity:
+                <asp:Label ID="QuantityLabel" runat="server" Text='<%# Eval("Quantity") %>' />
+                <br />
+                Description:
+                <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
+                <br />
+                Product_Type:
+                <asp:Label ID="Product_TypeLabel" runat="server" Text='<%# Eval("Product_Type") %>' />
+                <br />
+                Images:
+                <asp:Label ID="ImagesLabel" runat="server" Text='<%# Eval("Images") %>' />
+                <br />
+                Cost_Price:
+                <asp:Label ID="Cost_PriceLabel" runat="server" Text='<%# Eval("Cost_Price") %>' />
+                <br />
+<br />
+            </ItemTemplate>
+        </asp:DataList>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Images], [Cost_Price] FROM [Product]"></asp:SqlDataSource>
+
+    </div>
 </asp:Content>

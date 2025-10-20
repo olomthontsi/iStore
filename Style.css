@@ -178,7 +178,6 @@ html, body, form {
     .footer-content {
         flex-direction: column;
     }
-<<<<<<< HEAD
 }
 
 /* Fix Bootstrap navbar spacing */
@@ -187,7 +186,7 @@ html, body, form {
     padding-top: 0;
     padding-bottom: 0;
     background-color:black;
-    height:90px;
+    height:75px;
 }
 
 /* Remove default form spacing in ASP.NET */
@@ -195,6 +194,4 @@ form {
     margin: 0;
     padding: 0;
 }
-=======
-} 
->>>>>>> 34d1255821c02953003c7a8cd9938ffb828d12d3
+

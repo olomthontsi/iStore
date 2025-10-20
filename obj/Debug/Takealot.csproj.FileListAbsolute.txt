@@ -57,3 +57,13 @@ C:\Users\142501689\source\repos\Takealot\obj\Debug\Takealot.csproj.CoreCompileIn
 C:\Users\142501689\source\repos\Takealot\obj\Debug\Takealot.csproj.CopyComplete
 C:\Users\142501689\source\repos\Takealot\obj\Debug\Takealot.dll
 C:\Users\142501689\source\repos\Takealot\obj\Debug\Takealot.pdb
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\bin\Takealot.dll.config
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\bin\Takealot.dll
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\bin\Takealot.pdb
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\obj\Debug\Takealot.csproj.AssemblyReference.cache
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\obj\Debug\Takealot.csproj.CoreCompileInputs.cache
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\obj\Debug\Takealot.csproj.CopyComplete
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\obj\Debug\Takealot.dll
+C:\Users\142502498\source\repos\InamMenziwa\Takealot\obj\Debug\Takealot.pdb

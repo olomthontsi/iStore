@@ -3,18 +3,24 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         /* Catcher banner at top */
-        .catcher {
-            margin: 0;
-            padding: 18px;
-            font-size: 18px;
-            background-color: rgb(3, 104, 135);
-            color: white;
-            text-align: center;
-            width: 100%;
-        }
-        .catcher p {
-            margin: 0;
-        }
+       .catcher {
+    margin: 0;
+    padding: 0 18px;                /* Only horizontal padding */
+    font-size: 14px;
+    background-color: #1588c9;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;                   /* Increased height to allow vertical centering */
+    display: flex;                 /* Flexbox for centering */
+    justify-content: center;      /* Horizontal centering */
+    align-items: center;          /* Vertical centering */
+}
+
+.catcher p {
+    margin: 0;
+}
+
 
         /* Carousel full-width, no extra spacing */
         .carousel, .carousel-inner, .carousel-item {
@@ -25,7 +31,7 @@
         .carousel-item img {
             display: block;
             width: 100%;
-            height: 650px; /* adjust height as needed */
+            height: 521px; /* adjust height as needed */
             object-fit: cover;
         }
 
@@ -50,6 +56,8 @@
             background-color: #000;
             opacity: 1;
         }
+
+        
     </style>
 </asp:Content>
 

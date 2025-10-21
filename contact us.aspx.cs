@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Takealot
 {
-    public partial class contactus : System.Web.UI.Page
+    public partial class contact_us : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

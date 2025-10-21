@@ -13,5 +13,30 @@ namespace Takealot
         {
 
         }
+
+        protected void btnlogin_Click(object sender, EventArgs e)
+        {
+            string username;
+            string password;
+
+
+            // Get values from textboxes
+            username = txtUsername.Text;
+            password = txtPassword.Text;
+
+            // Check each row in GridView
+            for (int i = 0; i < GridView1.Rows.Count; i++)
+            {
+                // If username and password match a row
+                if ((username == GridView1.Rows[i].Cells[7].Text) && (password == GridView1.Rows[i].Cells[5].Text))
+                {
+                    // Save username in session
+                    Session["username"] = username;
+
+                    // Go to admin home page
+                    Response.Redirect("adminhome.aspx");
+                }
+            }
+        }
     }
 }

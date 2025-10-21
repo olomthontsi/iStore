@@ -11,7 +11,7 @@ namespace Takealot
 {
 
 
-    public partial class contactus
+    public partial class contact_us
     {
     }
 }

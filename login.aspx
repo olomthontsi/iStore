@@ -34,4 +34,29 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [User_Id], [Name], [Last_Name], [Email], [password], [Phone_Number], [User_Name] FROM [Users]"></asp:SqlDataSource>
 
     </div>
+    <div>
+
+        <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2" RepeatColumns="5" RepeatDirection="Horizontal" DataKeyField="Id">
+            <ItemTemplate>
+                <asp:ImageButton ID="ImageButton4" runat="server" Height="200px" ImageUrl='<%# Eval("Images") %>' Width="200px" />
+                <br />
+                <br />
+                Model_Name:
+                <asp:Label ID="Model_NameLabel" runat="server" Text='<%# Eval("Model_Name") %>' />
+                <br />
+                Price:
+                <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
+                <br />
+                Images:
+                <asp:Label ID="ImagesLabel" runat="server" Text='<%# Eval("Images") %>' />
+                <br />
+                Id:
+                <asp:Label ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
+<br />
+                <br />
+            </ItemTemplate>
+        </asp:DataList>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Model_Name], [Price], [Images], [Id] FROM [Product]"></asp:SqlDataSource>
+
+    </div>
 </asp:Content>

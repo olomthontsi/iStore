@@ -5,9 +5,9 @@
         /* Catcher banner at top */
         .catcher {
             margin: 0;
-            padding: 18px;
+            padding: 15px;
             font-size: 18px;
-            background-color: rgb(3, 104, 135);
+            background-color: #1588C9;
             color: white;
             text-align: center;
             width: 100%;
@@ -50,6 +50,34 @@
             background-color: #000;
             opacity: 1;
         }
+
+   #productCarousel img {
+    height: 100px;       /* Fixed height */
+    width: auto;         /* Maintain original aspect ratio */
+    object-fit: contain; /* Show full image without cropping */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  /* Center horizontally */
+    transition: transform 0.3s ease;
+}
+
+#productCarousel img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#productCarousel h6 {
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carousel-item .row {
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
     </style>
 </asp:Content>
 
@@ -97,6 +125,31 @@
             <button type="button" data-bs-target="#istoreCarousel" data-bs-slide-to="6"></button>
         </div>
     </div>
+  <div id="productCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+        <asp:Repeater ID="rptProducts" runat="server">
+            <ItemTemplate>
+                <%-- Open a new carousel slide every 5 items --%>
+                <%# (Container.ItemIndex % 5 == 0) ? "<div class='carousel-item " + ((Container.ItemIndex == 0) ? "active" : "") + "'><div class='row text-center'>" : "" %>
+
+                <div class="col-md-2 mx-auto">
+                    <img src='<%# Eval("Images") %>' class="img-fluid rounded mb-2" alt='<%# Eval("Model_Name") %>' />
+                    <h6><%# Eval("Model_Name") %></h6>
+                </div>
+
+                <%-- Close carousel slide every 5 items or at the end --%>
+                <%# ((Container.ItemIndex + 1) % 5 == 0) ? "</div></div>" : "" %>
+            </ItemTemplate>
+            <FooterTemplate>
+                <%-- Close last slide if not multiple of 5 --%>
+                </div></div>
+            </FooterTemplate>
+        </asp:Repeater>
+    </div>
+</div>
+
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

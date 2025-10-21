@@ -1,4 +1,5 @@
-".vs/" 
+*.vs/*
+*suo*
  
 # Ignore Visual Studio temporary files
 .vs/
@@ -31,3 +32,15 @@ App_Data/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Ignore Visual Studio and build files
+.vs/
+bin/
+obj/
+App_Data/
+*.user
+*.suo
+*.pdb
+*.mdb
+*.ldf
+*.vscode/

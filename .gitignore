@@ -1,46 +1,4 @@
 *.vs/*
 *suo*
  
-# Ignore Visual Studio temporary files
-.vs/
-*.user
-*.suo
-*.userosscache
 
-# Ignore build output folders
-bin/
-obj/
-*.dll
-*.pdb
-*.cache
-*.log
-
-# Ignore local database files
-App_Data/
-*.mdf
-*.ldf
-
-# Ignore temporary and backup files
-*.tmp
-*.temp
-*.bak
-
-# Ignore publish profiles (optional)
-*.Publish.xml
-
-# Ignore system files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Ignore Visual Studio and build files
-.vs/
-bin/
-obj/
-App_Data/
-*.user
-*.suo
-*.pdb
-*.mdb
-*.ldf
-*.vscode/

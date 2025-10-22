@@ -167,9 +167,13 @@
     <Content Include="images\tradein.png" />
     <Content Include="images\wapp.png" />
     <Content Include="images\warranty.png" />
+    <Content Include="InamStyles.css" />
     <Content Include="index.aspx" />
+    <Content Include="LiyemaStyle.css" />
     <Content Include="login.aspx" />
     <Content Include="membership.aspx" />
+    <Content Include="MilaStyles.css" />
+    <Content Include="OlwethuStyles.css" />
     <Content Include="producttype.aspx" />
     <Content Include="register.aspx" />
     <Content Include="search.aspx" />

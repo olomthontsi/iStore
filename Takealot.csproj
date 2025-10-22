@@ -167,14 +167,24 @@
     <Content Include="images\tradein.png" />
     <Content Include="images\wapp.png" />
     <Content Include="images\warranty.png" />
+    <Content Include="static\liyemma.js" />
+    <Content Include="static\mila.js" />
+    <Content Include="static\olo.js" />
+    <Content Include="Styles\InamStyles.css" />
     <Content Include="index.aspx" />
+    <Content Include="Styles\LiyemaStyle.css" />
     <Content Include="login.aspx" />
     <Content Include="membership.aspx" />
+    <Content Include="Styles\MilaStyles.css" />
+    <Content Include="Styles\OlwethuStyles.css" />
     <Content Include="producttype.aspx" />
     <Content Include="register.aspx" />
     <Content Include="search.aspx" />
+
     <Content Include="Style.css" />
     <Content Include="Terms&amp;Conditions.aspx" />
+
+    <Content Include="Styles\sitemaster.css" />
     <Content Include="viewall.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

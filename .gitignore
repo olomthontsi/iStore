@@ -1,4 +1,8 @@
 *.vs/*
 *suo*
  
-
+.vs/
+bin/
+obj/
+App_Data/*.ldf
+App_Data/*.mdf

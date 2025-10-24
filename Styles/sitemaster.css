@@ -1,4 +1,7 @@
-﻿* {
+﻿/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,34 +9,40 @@
 
 body, html {
     width: 100%;
-    font-family: sans-serif !important;
-    
+    font-family: sans-serif;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #000 !important; /* Black background */
+    background-color: #000; /* Black background */
+
 }
 
 .navbar-brand img {
-    height: 40px;
+    height: 55px;
+    width: 118px;
 }
 
-.nav-link {
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
+.nav-item {
+    font-family: 'Raleway', sans-serif;
+    color: white; /* Default white text */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    color: white; /* Default white */
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 530;
     transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #00bfff !important; /* Light blue on hover */
-}
+    .navbar-nav .nav-link:hover {
+        color: #d3d3d3; /* Light grey on hover */
+    }
 
-/* ✅ Right section (search + icons) */
+/* Right section (search + icons) */
 .search, .login, .cart {
     height: 28px;
     width: 30px;
@@ -52,7 +61,7 @@ body, html {
         color: #555;
     }
 
-/* ✅ Footer */
+/* Footer */
 .footer {
     background-color: #000;
     color: #fff;
@@ -82,12 +91,14 @@ body, html {
     }
 
     .footer-column a {
-        color: #fff;
+        color: white; /* Default white */
         text-decoration: none;
         font-size: 0.95em;
+        transition: color 0.3s ease;
     }
 
         .footer-column a:hover {
+            color: #d3d3d3; /* Light grey on hover */
             text-decoration: underline;
         }
 
@@ -138,9 +149,9 @@ body, html {
     margin: 10px 0 20px 0;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
     }
 }
-

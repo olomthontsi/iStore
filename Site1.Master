@@ -82,7 +82,7 @@
                 <p><a href="aboutus.aspx">About Us</a></p>
                 <p><a href="contact us.aspx">Contact Us</a></p>
                 <p><a href="#">FAQ</a></p>
-                <p><a href="#">Terms & Conditions</a></p>
+                <p><a href="Terms&Conditions.aspx">Terms & Conditions</a></p>
             </div>
 
             <div class="footer-column">

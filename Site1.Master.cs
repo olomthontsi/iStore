@@ -18,5 +18,10 @@ namespace Takealot
         {
             Response.Redirect("login.aspx");
         }
+
+        protected void ImbLogin_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

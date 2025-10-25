@@ -11,23 +11,20 @@
 
 <body>
 <form runat="server">
-    <!-- ✅ Navbar Start -->
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
+
+            <a class="navbar-brand" href="index.aspx">
                 <img src="/images/logo.png" alt="Logo">
             </a>
 
-            <!-- Hamburger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Navbar content -->
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <!-- Centered nav links -->
+
                 <ul class="navbar-nav m-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Mac</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
@@ -39,13 +36,19 @@
                     <li class="nav-item"><a class="nav-link" href="contact us.aspx">Contact Us</a></li>
                 </ul>
 
-                <!-- ✅ Right-aligned section -->
-                <div class="d-flex align-items-center gap-2">
-                    &nbsp;<asp:ImageButton ID="ImageButton2" runat="server" CssClass="login" ImageUrl="~/images/login.png" />
-                    &nbsp;<asp:ImageButton ID="ImageButton3" runat="server" CssClass="cart" ImageUrl="~/images/cart.png" />
-                    <asp:TextBox ID="search" CssClass="textbox" runat="server" placeholder="Search..."></asp:TextBox>
-                    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="search" ImageUrl="~/images/images.png" />
-                </div>
+<div class="d-flex align-items-center gap-2">
+    &nbsp;<a href="login.aspx">
+        <img src="images/login.png" alt="Login" class="login" />
+    </a>
+    &nbsp;<a href="#">
+        <img src="images/cart.png" alt="Cart" class="cart" />
+    </a>
+    <input type="text" id="search" class="textbox" placeholder="Search..." />
+    <a href="#">
+        <img src="images/images.png" alt="Search Icon" class="search" />
+    </a>
+</div>
+
             </div>
         </div>
     </nav>

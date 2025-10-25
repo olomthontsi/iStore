@@ -46,6 +46,9 @@ body, html {
     width: 30px;
     cursor: pointer;
 }
+    .login:hover, .cart:hover, .search:hover {
+        transform: scale(1.1);
+    }
 
 .textbox {
     border-radius: 60px;

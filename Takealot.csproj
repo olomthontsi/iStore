@@ -180,10 +180,8 @@
     <Content Include="producttype.aspx" />
     <Content Include="register.aspx" />
     <Content Include="search.aspx" />
-
     <Content Include="Style.css" />
     <Content Include="Terms&amp;Conditions.aspx" />
-
     <Content Include="Styles\sitemaster.css" />
     <Content Include="viewall.aspx" />
     <Content Include="Web.config" />

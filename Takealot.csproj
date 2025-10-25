@@ -92,6 +92,7 @@
     <Content Include="images\images.png" />
     <Content Include="images\Inam.png" />
     <Content Include="images\insta.png" />
+    <Content Include="images\iphone17series.png" />
     <Content Include="images\istore slide 1.png" />
     <Content Include="images\istore slide 2.png" />
     <Content Include="images\istore slide 3.png" />
@@ -167,6 +168,7 @@
     <Content Include="images\tradein.png" />
     <Content Include="images\wapp.png" />
     <Content Include="images\warranty.png" />
+    <Content Include="phones.aspx" />
     <Content Include="static\liyemma.js" />
     <Content Include="static\mila.js" />
     <Content Include="static\olo.js" />
@@ -180,10 +182,8 @@
     <Content Include="producttype.aspx" />
     <Content Include="register.aspx" />
     <Content Include="search.aspx" />
-
     <Content Include="Style.css" />
     <Content Include="Terms&amp;Conditions.aspx" />
-
     <Content Include="Styles\sitemaster.css" />
     <Content Include="viewall.aspx" />
     <Content Include="Web.config" />
@@ -265,6 +265,13 @@
     </Compile>
     <Compile Include="membership.aspx.designer.cs">
       <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phones.aspx.cs">
+      <DependentUpon>phones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phones.aspx.designer.cs">
+      <DependentUpon>phones.aspx</DependentUpon>
     </Compile>
     <Compile Include="producttype.aspx.cs">
       <DependentUpon>producttype.aspx</DependentUpon>

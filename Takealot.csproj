@@ -131,13 +131,16 @@
     <Content Include="images\products\ipadpurple.jpg" />
     <Content Include="images\products\iphone13black.jpg" />
     <Content Include="images\products\iphone13blue.jpg" />
+    <Content Include="images\products\iphone13problue.jpg" />
     <Content Include="images\products\iphone13promaxblack.jpg" />
     <Content Include="images\products\iphone13promaxblue.jpg" />
+    <Content Include="images\products\iphone13promaxgreen.jpg" />
     <Content Include="images\products\iphone13promaxwhite.jpg" />
     <Content Include="images\products\iphone13white.jpg" />
     <Content Include="images\products\iphone14black.jpg" />
     <Content Include="images\products\iphone14blue.jpg" />
     <Content Include="images\products\iphone14problackk.jpg" />
+    <Content Include="images\products\iphone14problue.jpg" />
     <Content Include="images\products\iphone14progold.jpg" />
     <Content Include="images\products\iphone14promax.jpg" />
     <Content Include="images\products\iphone14red.jpg" />

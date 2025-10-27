@@ -169,6 +169,7 @@
     <Content Include="images\tradein.png" />
     <Content Include="images\wapp.png" />
     <Content Include="images\warranty.png" />
+    <Content Include="membership confirmation.aspx" />
     <Content Include="phones.aspx" />
     <Content Include="static\liyemma.js" />
     <Content Include="static\mila.js" />
@@ -259,6 +260,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership confirmation.aspx.cs">
+      <DependentUpon>membership confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership confirmation.aspx.designer.cs">
+      <DependentUpon>membership confirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="membership.aspx.cs">
       <DependentUpon>membership.aspx</DependentUpon>

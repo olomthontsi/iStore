@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="membership.aspx.cs" Inherits="Takealot.membership" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            float: left;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <!DOCTYPE html>
@@ -41,8 +46,10 @@
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <form action="membership confirmation.aspx">
-            <button type="submit" class="signupbtn">Sign Up</button>
+        
+          <a href="membership confirmation.aspx">
+            <button type="submit" class="signupbtn">Sign Up</button></a>
+        
       </div>
     </div>
   </form>

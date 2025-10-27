@@ -192,10 +192,14 @@
         <h2>10. Your Rights</h2>
         <p>10.1 You have certain rights regarding your personal data. These include the right to access, rectify, or erase your data.</p>
 
-        <p>For more information, please contact us at sunecotravels@gmail.com.</p>
+        <p>For more information, please contact us at istore@gmail.com.</p>
        </section>
 
         <p>If you have any questions about these Terms, please contact us.</p>
 </body>
     </div>
+
+
+<a href="membership confirmation.aspx">
+            <button type="submit" class="signupbtn">Sign Up</button></a>
 </asp:Content>

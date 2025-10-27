@@ -10,12 +10,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   
-  <link href="style.css" rel="stylesheet">
+  <link href="Styles/MilaStyles.css" rel="stylesheet">
 </head>
 
 
  <body>
       <form class="modal-content" action="/action_page.php">
+       <div class="imgcontainer">
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <img src="img_avatar2.png" alt="Avatar" class="avatar">
+       </div>
     <div class="container">
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
@@ -37,7 +41,8 @@
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <form action="membership confirmation.aspx">
+            <button type="submit" class="signupbtn">Sign Up</button>
       </div>
     </div>
   </form>

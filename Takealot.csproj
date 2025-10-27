@@ -137,7 +137,7 @@
     <Content Include="images\products\iphone13white.jpg" />
     <Content Include="images\products\iphone14black.jpg" />
     <Content Include="images\products\iphone14blue.jpg" />
-    <Content Include="images\products\iphone14problack.jpg" />
+    <Content Include="images\products\iphone14problackk.jpg" />
     <Content Include="images\products\iphone14progold.jpg" />
     <Content Include="images\products\iphone14promax.jpg" />
     <Content Include="images\products\iphone14red.jpg" />
@@ -145,7 +145,8 @@
     <Content Include="images\products\iphone15blue.jpg" />
     <Content Include="images\products\iphone15green.jpg" />
     <Content Include="images\products\iphone15problack.jpg" />
-    <Content Include="images\products\iphone15prosilver.jpg" />
+    <Content Include="images\products\iphone15promax %281%29.jpg" />
+    <Content Include="images\products\iphone15propurple.jpg" />
     <Content Include="images\products\iphone15prowhite.jpg" />
     <Content Include="images\products\iphone16black.png" />
     <Content Include="images\products\iphone16pink.png" />

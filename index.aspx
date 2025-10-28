@@ -36,7 +36,7 @@ product-link {
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<div class="w-100 text-center py-3 banner" style="background-color: #209AE3; color: white; font-family: Arial, sans-serif; ">
+    <div class="w-100 text-center py-3 banner" style="background-color: #209AE3; color: white; font-family: Arial, sans-serif; ">
         Get the Fastest delivery for Free. Shop online at iStore!
     </div>
 

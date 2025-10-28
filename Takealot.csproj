@@ -125,6 +125,10 @@
     <Content Include="images\products\imacblue.jpeg" />
     <Content Include="images\products\imacgreen.png" />
     <Content Include="images\products\imacpink.jpg" />
+    <Content Include="images\products\ipadairblue.jpg" />
+    <Content Include="images\products\ipadairgold.jpg" />
+    <Content Include="images\products\ipadairgrey.jpg" />
+    <Content Include="images\products\ipadairpurple.png" />
     <Content Include="images\products\ipadblue.jpg" />
     <Content Include="images\products\ipadgray.jpg" />
     <Content Include="images\products\ipadgreen.jpg" />
@@ -132,14 +136,18 @@
     <Content Include="images\products\iphone13black.jpg" />
     <Content Include="images\products\iphone13blue.jpg" />
     <Content Include="images\products\iphone13promaxblack.jpg" />
+    <Content Include="images\products\iphone13promaxblack.png" />
     <Content Include="images\products\iphone13promaxblue.jpg" />
+    <Content Include="images\products\iphone13promaxgreen.jpg" />
     <Content Include="images\products\iphone13promaxwhite.jpg" />
     <Content Include="images\products\iphone13white.jpg" />
     <Content Include="images\products\iphone14black.jpg" />
     <Content Include="images\products\iphone14blue.jpg" />
     <Content Include="images\products\iphone14problackk.jpg" />
     <Content Include="images\products\iphone14progold.jpg" />
+    <Content Include="images\products\iphone14progreen.jpg" />
     <Content Include="images\products\iphone14promax.jpg" />
+    <Content Include="images\products\iphone14prored.jpg" />
     <Content Include="images\products\iphone14red.jpg" />
     <Content Include="images\products\iphone15black.jpg" />
     <Content Include="images\products\iphone15blue.jpg" />
@@ -163,6 +171,7 @@
     <Content Include="images\products\iphoneairblack.jpg" />
     <Content Include="images\products\iphoneairblue.jpg" />
     <Content Include="images\products\iphoneairwhite.jpg" />
+    <Content Include="images\products\pouch.png" />
     <Content Include="images\repairs.png" />
     <Content Include="images\sim.png" />
     <Content Include="images\Tech.png" />

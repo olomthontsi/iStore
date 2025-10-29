@@ -182,9 +182,10 @@
     <Content Include="images\sim.png" />
     <Content Include="images\Tech.png" />
     <Content Include="images\tradein.png" />
-    <Content Include="images\tt.png" />
+    <Content Include="images\TWITTER.jpeg" />
     <Content Include="images\wapp.png" />
     <Content Include="images\warranty.png" />
+    <Content Include="images\YT.png" />
     <Content Include="LoginPage.aspx" />
     <Content Include="membership confirmation.aspx" />
     <Content Include="phones.aspx" />

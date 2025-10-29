@@ -88,7 +88,7 @@
                         <div class="card-body">
                             <h5 class="role">Designer</h5>
                             <h4 class="name">Liyema Mfengwana</h4>
-                            <p class="desc">Liyema brings creativity and visual storytelling to the team. She designs intuitive, engaging, and aesthetically pleasing user experiences across all our projects.</p>
+                            <p class="desc">Liyema brings creativity and visual storytelling to the team. He designs intuitive, engaging, and aesthetically pleasing user experiences across all our projects.</p>
                             <div class="socials">
                                 <img src="images/facebook.jpg" alt="Facebook">
                                 <img src="images/insta.png" alt="Instagram">

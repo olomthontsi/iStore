@@ -52,7 +52,8 @@
             </div>
         </div>
     </nav>
-    <!-- ✅ Navbar End -->
+
+
 
     <table style="width:100%;">
         <tr>
@@ -62,7 +63,7 @@
         </tr>
     </table>
 
-    <!-- ✅ Footer -->
+ 
     <footer class="footer">
         <div class="footer-top-logo">
             <img src="/images/logo.png" alt="Company Logo" />
@@ -100,7 +101,7 @@
     </footer>
 </form>
 
-<!-- ✅ Include Bootstrap JS at the END of the body -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -43,10 +43,10 @@
     &nbsp;<a href="#">
         <img src="images/cart.png" alt="Cart" class="cart" />
     </a>
-    <input type="text" id="search" class="textbox" placeholder="Search..." />
-    <a href="#">
+    <asp:TextBox ID="txtsearch" runat="server" CssClass="textbox" placeholder="Search..."></asp:TextBox>
+     <asp:LinkButton ID="SearchLink" runat="server" OnClick="SearchLink_Click">
         <img src="images/images.png" alt="Search Icon" class="search" />
-    </a>
+    </asp:LinkButton>
 </div>
 
             </div>

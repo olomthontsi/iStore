@@ -18,10 +18,11 @@ namespace Takealot
         {
             Response.Redirect("login.aspx");
         }
-
-        protected void ImbLogin_Click(object sender, ImageClickEventArgs e)
+        protected void SearchLink_Click(object sender, EventArgs e)
         {
-
+            string item = txtsearch.Text;
+            Session["product"] = item;
+            Response.Redirect("search.aspx");
         }
     }
 }

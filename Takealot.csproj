@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="addtocart.aspx" />
     <Content Include="adminhome.aspx" />
     <Content Include="App_Data\istore.mdf" />
     <Content Include="App_Data\istore_log.ldf">
@@ -195,7 +196,6 @@
     <Content Include="Styles\InamStyles.css" />
     <Content Include="index.aspx" />
     <Content Include="Styles\LiyemaStyle.css" />
-    <Content Include="login.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="Styles\MilaStyles.css" />
     <Content Include="Styles\OlwethuStyles.css" />
@@ -221,6 +221,13 @@
     </Compile>
     <Compile Include="addnewproduct.aspx.designer.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addtocart.aspx.cs">
+      <DependentUpon>addtocart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addtocart.aspx.designer.cs">
+      <DependentUpon>addtocart.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>
@@ -270,13 +277,6 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>

@@ -40,7 +40,7 @@
     &nbsp;<a href="LoginPage.aspx">
         <img src="images/login.png" alt="Login" class="login" />
     </a>
-    &nbsp;<a href="#">
+    &nbsp;<a href="addtocart.aspx">
         <img src="images/cart.png" alt="Cart" class="cart" />
     </a>
     <asp:TextBox ID="txtsearch" runat="server" CssClass="textbox" placeholder="Search..."></asp:TextBox>

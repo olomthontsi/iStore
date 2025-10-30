@@ -17,5 +17,15 @@ namespace Takealot
         {
 
         }
+
+        protected void rptProducts_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "ViewDetails")
+            {
+                string productCode = e.CommandArgument.ToString();
+                Session["productcode"] = productCode;
+                Response.Redirect("details.aspx");
+            }
+        }
     }
 }

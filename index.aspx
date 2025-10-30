@@ -70,18 +70,23 @@ product-link {
 
      <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner">
-                    <asp:Repeater ID="rptProducts" runat="server" DataSourceID="SqlDataSource1">
+                    <asp:Repeater ID="rptProducts" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="rptProducts_ItemCommand">
                         <ItemTemplate>
                             <%-- Open carousel-item div when starting a new group of 5 --%>
                             <%# Container.ItemIndex % 5 == 0 ? "<div class='carousel-item " + (Container.ItemIndex == 0 ? "active" : "") + "'><div class='row g-3 justify-content-center'>" : "" %>
 
                             <div class="col-6 col-md-4 col-lg-2">
-                                <div class="product-card">
+                                <asp:LinkButton
+                                    ID="lnkViewDetails" 
+                                    runat="server" 
+                                    CssClass="product-card"
+                                    CommandName="ViewDetails" 
+                                    CommandArgument='<%# Eval("Product_Code") %>'>
                                     <img src='<%# Eval("Images") %>' alt='<%# Eval("Model_Name") %>' />
                                     <div class="product-name"><%# Eval("Model_Name") %></div>
-                                    
-                                </div>
+                                </asp:LinkButton>
                             </div>
+
 
                             <%# (Container.ItemIndex + 1) % 5 == 0 || (Container.ItemIndex + 1) == ((Repeater)Container.NamingContainer).Items.Count ? "</div></div>" : "" %>
                         </ItemTemplate>

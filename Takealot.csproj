@@ -69,7 +69,7 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
-    <Content Include="addtocart.aspx" />
+    <Content Include="viewcart.aspx" />
     <Content Include="adminhome.aspx" />
     <Content Include="App_Data\istore.mdf" />
     <Content Include="App_Data\istore_log.ldf">
@@ -222,12 +222,12 @@
     <Compile Include="addnewproduct.aspx.designer.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="addtocart.aspx.cs">
-      <DependentUpon>addtocart.aspx</DependentUpon>
+    <Compile Include="viewcart.aspx.cs">
+      <DependentUpon>viewcart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="addtocart.aspx.designer.cs">
-      <DependentUpon>addtocart.aspx</DependentUpon>
+    <Compile Include="viewcart.aspx.designer.cs">
+      <DependentUpon>viewcart.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>

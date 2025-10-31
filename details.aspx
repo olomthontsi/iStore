@@ -54,21 +54,21 @@
                 <asp:BoundField DataField="Colour" HeaderText="Colour" SortExpression="Colour" />
                 <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                 <asp:BoundField DataField="quantity" HeaderText="quantity" SortExpression="quantity" />
-                <asp:BoundField DataField="Product_Name" HeaderText="Product_Name" SortExpression="Product_Name" />
+                <asp:BoundField DataField="Product_Type" HeaderText="Product_Type" SortExpression="Product_Type" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Cart] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Cart] ([Id], [Product_Code], [Model_Name], [Colour], [Price], [quantity], [Product_Name]) VALUES (@Id, @Product_Code, @Model_Name, @Colour, @Price, @quantity, @Product_Name)" SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Colour], [Price], [quantity], [Product_Name] FROM [Cart]" UpdateCommand="UPDATE [Cart] SET [Product_Code] = @Product_Code, [Model_Name] = @Model_Name, [Colour] = @Colour, [Price] = @Price, [quantity] = @quantity, [Product_Name] = @Product_Name WHERE [Id] = @Id">
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Cart] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Cart] ([Id], [Product_Code], [Model_Name], [Colour], [Price], [quantity], [Product_Type]) VALUES (@Id, @Product_Code, @Model_Name, @Colour, @Price, @quantity, @Product_Type)" SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Colour], [Price], [quantity], [Product_Type] FROM [Cart]" UpdateCommand="UPDATE [Cart] SET [Product_Code] = @Product_Code, [Model_Name] = @Model_Name, [Colour] = @Colour, [Price] = @Price, [quantity] = @quantity, [Product_Type] = @Product_Type WHERE [Id] = @Id">
             <DeleteParameters>
                 <asp:Parameter Name="Id" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
-                <asp:Parameter Name="Id" Type="Int32" />
-                <asp:Parameter Name="Product_Code" Type="String" />
-                <asp:Parameter Name="Model_Name" Type="String" />
-                <asp:Parameter Name="Colour" Type="String" />
-                <asp:Parameter Name="Price" Type="String" />
-                <asp:Parameter Name="quantity" Type="Int32" />
-                <asp:Parameter Name="Product_Name" Type="String" />
+                <asp:sessionParameter SessionField="id" Name="Id" Type="Int32" />
+                <asp:sessionParameter SessionField="codesession" Name="Product_Code" Type="String" />
+                <asp:sessionParameter SessionField="namesession" Name="Model_Name" Type="String" />
+                <asp:sessionParameter SessionField="colorsession" Name="Colour" Type="String" />
+                <asp:sessionParameter SessionField="pricesession" Name="Price" Type="String" />
+                <asp:sessionParameter SessionField="quantity_session" Name="quantity" Type="Int32" />
+                <asp:sessionParameter SessionField="typesession" Name="Product_Type" Type="String" />
             </InsertParameters>
             <UpdateParameters>
                 <asp:Parameter Name="Product_Code" Type="String" />
@@ -76,7 +76,7 @@
                 <asp:Parameter Name="Colour" Type="String" />
                 <asp:Parameter Name="Price" Type="String" />
                 <asp:Parameter Name="quantity" Type="Int32" />
-                <asp:Parameter Name="Product_Name" Type="String" />
+                <asp:Parameter Name="Product_Type" Type="String" />
                 <asp:Parameter Name="Id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>

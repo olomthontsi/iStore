@@ -49,6 +49,7 @@ namespace Takealot
                 quantity = Convert.ToInt32(ddl.SelectedValue);
                 Session["quantity_session"] = quantity;
             }
+            SqlDataSource2.Insert();
         }
     }
 }

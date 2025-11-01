@@ -5,17 +5,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container-fluid px-0">
-        <div class="banner position-relative">
-            <img src="images/applestore.png" alt="Banner" class="img-fluid">
-            <div class="banner-text">
-                <h1>About iStore</h1>
-                <p>At iStore we aim to provide our customers with a <b>seamless<br>shopping experience</b>,
-                    and  access to the best tech support and <br> training to give you the best experience with your products.
-                </p>
-            </div>
-        </div>
+<div class="container-fluid px-0">
+    <div class="banner2">
+    <img src="images/applestore.png" alt="Banner" class="img-fluid">
+    <div class="banner2-text">
+      <h1>About iStore</h1>
+      <p>
+        At iStore we aim to provide our customers with a 
+        <b>seamless<br>shopping experience</b>,
+        and access to the best tech support and <br> training to give you the best experience with your products.
+      </p>
     </div>
+  </div>
+</div>
+
+
 
     <section class="services-text">
         <h1>Our Services</h1>

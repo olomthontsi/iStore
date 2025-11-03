@@ -69,6 +69,15 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="images\products\iphone12.jpg" />
+    <Content Include="images\products\iphone12green.jpg" />
+    <Content Include="images\products\iphone12prooo.png" />
+    <Content Include="images\products\iphone12prr.jpg" />
+    <Content Include="images\products\iphone12purple.jpg" />
+    <Content Include="images\products\iphoneblack13.jpg" />
+    <Content Include="images\products\iphonegreejn.png" />
+    <Content Include="images\products\iphonered13.jpg" />
+    <Content Include="images\products\iphonr12proo.jpg" />
     <Content Include="AddNewUser.aspx" />
     <Content Include="UpdateProduct.aspx" />
     <Content Include="viewcart.aspx" />

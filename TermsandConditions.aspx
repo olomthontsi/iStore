@@ -8,7 +8,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   
+<<<<<<< HEAD
+  <link href="MilaStyles.css" rel="stylesheet">
+=======
   <link href="Styles/MilaStyles.css" rel="stylesheet">
+>>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
 </head>
 
 <body>

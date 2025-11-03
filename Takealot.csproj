@@ -211,6 +211,10 @@
     <Content Include="producttype.aspx" />
     <Content Include="search.aspx" />
     <Content Include="Style.css" />
+<<<<<<< HEAD
+    <Content Include="TermsandConditions.aspx" />
+=======
+>>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
     <Content Include="Styles\sitemaster.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="viewall.aspx" />

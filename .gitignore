@@ -12,3 +12,5 @@ App_Data/*.mdf
 *.cache
 *.pdb
 *.dll.vs/ 
+"App_Data/*.mdf" 
+"App_Data/*.ldf" 

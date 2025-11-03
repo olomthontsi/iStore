@@ -28,6 +28,7 @@
 
                 <ul class="navbar-nav m-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Add New User</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Edit User</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Update Product</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Delete</a></li>
                 </ul>

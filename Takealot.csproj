@@ -70,6 +70,18 @@
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
     <Content Include="Styles\inam2.css" />
+
+    <Content Include="images\products\iphone12.jpg" />
+    <Content Include="images\products\iphone12green.jpg" />
+    <Content Include="images\products\iphone12prooo.png" />
+    <Content Include="images\products\iphone12prr.jpg" />
+    <Content Include="images\products\iphone12purple.jpg" />
+    <Content Include="images\products\iphoneblack13.jpg" />
+    <Content Include="images\products\iphonegreejn.png" />
+    <Content Include="images\products\iphonered13.jpg" />
+    <Content Include="images\products\iphonr12proo.jpg" />
+    <Content Include="AddNewUser.aspx" />
+    <Content Include="UpdateProduct.aspx" />
     <Content Include="viewcart.aspx" />
     <Content Include="adminhome.aspx" />
     <Content Include="App_Data\istore.mdf" />
@@ -203,6 +215,7 @@
     <Content Include="producttype.aspx" />
     <Content Include="search.aspx" />
     <Content Include="Style.css" />
+    <Content Include="TermsandConditions.aspx" />
     <Content Include="Styles\sitemaster.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="viewall.aspx" />
@@ -222,6 +235,20 @@
     </Compile>
     <Compile Include="addnewproduct.aspx.designer.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewUser.aspx.cs">
+      <DependentUpon>AddNewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewUser.aspx.designer.cs">
+      <DependentUpon>AddNewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProduct.aspx.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.aspx.designer.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewcart.aspx.cs">
       <DependentUpon>viewcart.aspx</DependentUpon>

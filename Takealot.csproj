@@ -69,8 +69,11 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="images\bag.jpg" />
+    <Content Include="images\customers.jpg" />
+    <Content Include="images\orders.jpg" />
+    <Content Include="images\sales.jpg" />
     <Content Include="Styles\inam2.css" />
-
     <Content Include="images\products\iphone12.jpg" />
     <Content Include="images\products\iphone12green.jpg" />
     <Content Include="images\products\iphone12prooo.png" />

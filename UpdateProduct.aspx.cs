@@ -13,5 +13,28 @@ namespace Takealot
         {
 
         }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.Update();
+        }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (GridView1.Rows.Count > 0)
+            {
+                txtId2.Text = GridView1.Rows[0].Cells[0].Text;
+                txtProductCode.Text = GridView1.Rows[0].Cells[1].Text;
+                txtModelName.Text = GridView1.Rows[0].Cells[2].Text;
+                txtStorageCapacity.Text = GridView1.Rows[0].Cells[3].Text;
+                txtColour.Text = GridView1.Rows[0].Cells[4].Text;
+                txtPrice.Text = GridView1.Rows[0].Cells[5].Text;
+                txtQuantity.Text = GridView1.Rows[0].Cells[6].Text;
+                txtDescription.Text = GridView1.Rows[0].Cells[7].Text;
+                txtProductType.Text = GridView1.Rows[0].Cells[8].Text;
+                txtImages.Text = GridView1.Rows[0].Cells[9].Text;
+                txtCostPrice.Text = GridView1.Rows[0].Cells[10].Text;
+            }
+        }
     }
 }

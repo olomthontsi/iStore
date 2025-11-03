@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="AddNewUser.aspx" />
+    <Content Include="UpdateProduct.aspx" />
     <Content Include="viewcart.aspx" />
     <Content Include="adminhome.aspx" />
     <Content Include="App_Data\istore.mdf" />
@@ -202,10 +204,7 @@
     <Content Include="producttype.aspx" />
     <Content Include="search.aspx" />
     <Content Include="Style.css" />
-<<<<<<< HEAD
     <Content Include="TermsandConditions.aspx" />
-=======
->>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
     <Content Include="Styles\sitemaster.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="viewall.aspx" />
@@ -225,6 +224,20 @@
     </Compile>
     <Compile Include="addnewproduct.aspx.designer.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewUser.aspx.cs">
+      <DependentUpon>AddNewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewUser.aspx.designer.cs">
+      <DependentUpon>AddNewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProduct.aspx.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.aspx.designer.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewcart.aspx.cs">
       <DependentUpon>viewcart.aspx</DependentUpon>

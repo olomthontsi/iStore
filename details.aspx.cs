@@ -27,28 +27,25 @@ namespace Takealot
                 new_id= 1;
             }
             Session["id"] = new_id;
-            Label2.Text = new_id.ToString();
         }
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
             int quantity = 0;
-            int i;
-            foreach(DataListItem item in DataList1.Items)
-            {              
-                DataList1.SelectedIndex = e.Item.ItemIndex;
-                i = DataList1.SelectedIndex;
 
-                Session["codesession"] = ((Label)DataList1.SelectedItem.FindControl("Product_CodeLabel")).Text;
-                Session["namesession"] = ((Label)DataList1.SelectedItem.FindControl("Model_NameLabel")).Text;
-                Session["pricesession"] = ((Label)DataList1.SelectedItem.FindControl("PriceLabel")).Text;
-                Session["colorsession"] = ((Label)DataList1.SelectedItem.FindControl("ColourLabel")).Text;
-                Session["typesession"] = ((Label)DataList1.SelectedItem.FindControl("Product_TypeLabel")).Text;
+            // get the item that was clicked
+            DataListItem item = e.Item;
 
-                DropDownList ddl = item.FindControl("ddlquantity") as DropDownList;
-                quantity = Convert.ToInt32(ddl.SelectedValue);
-                Session["quantity_session"] = quantity;
-            }
+            Session["codesession"] = ((Label)item.FindControl("Product_CodeLabel")).Text;
+            Session["namesession"] = ((Label)item.FindControl("Model_NameLabel")).Text;
+            Session["pricesession"] = ((Label)item.FindControl("PriceLabel")).Text;
+            Session["colorsession"] = ((Label)item.FindControl("ColourLabel")).Text;
+            Session["typesession"] = ((Label)item.FindControl("Product_TypeLabel")).Text;
+
+            DropDownList ddl = (DropDownList)item.FindControl("ddlquantity");
+            quantity = Convert.ToInt32(ddl.SelectedValue);
+            Session["quantity_session"] = quantity;
+
             SqlDataSource2.Insert();
         }
     }

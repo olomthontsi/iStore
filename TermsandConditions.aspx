@@ -8,7 +8,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   
+<<<<<<< HEAD
   <link href="MilaStyles.css" rel="stylesheet">
+=======
+  <link href="Styles/MilaStyles.css" rel="stylesheet">
+>>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
 </head>
 
 <body>
@@ -192,10 +196,14 @@
         <h2>10. Your Rights</h2>
         <p>10.1 You have certain rights regarding your personal data. These include the right to access, rectify, or erase your data.</p>
 
-        <p>For more information, please contact us at sunecotravels@gmail.com.</p>
+        <p>For more information, please contact us at istore@gmail.com.</p>
        </section>
 
         <p>If you have any questions about these Terms, please contact us.</p>
 </body>
     </div>
+
+
+<a href="membership confirmation.aspx">
+            <button type="submit" class="signupbtn">Sign Up</button></a>
 </asp:Content>

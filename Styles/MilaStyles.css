@@ -168,3 +168,21 @@ hr {
         text-decoration: underline;
     }
 
+<<<<<<< HEAD
+=======
+/* Membership Confirmation */
+#membershipconfirmation body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f9ff;
+    padding: 50px;
+    text-align: center;
+}
+
+#membershipconfirmation .confirmation {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+>>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35

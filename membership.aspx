@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="membership.aspx.cs" Inherits="Takealot.membership" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            float: left;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <!DOCTYPE html>
@@ -9,8 +14,12 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<<<<<<< HEAD
   
   <link href="MilaStyles.css" rel="stylesheet">
+=======
+  <link href="Styles/MilaStyles.css" rel="stylesheet">
+>>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
 </head>
 
 
@@ -41,8 +50,15 @@
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+<<<<<<< HEAD
         <form action="membership confirmation.aspx">
             <button type="submit" class="signupbtn">Sign Up</button>
+=======
+        
+          <a href="membership confirmation.aspx">
+            <button type="submit" class="signupbtn">Sign Up</button></a>
+        
+>>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
       </div>
     </div>
   </form>

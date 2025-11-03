@@ -6,3 +6,9 @@ bin/
 obj/
 App_Data/*.ldf
 App_Data/*.mdf
+
+*.user
+*.suo
+*.cache
+*.pdb
+*.dll.vs/ 

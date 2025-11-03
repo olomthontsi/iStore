@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="images\Apple Watch Series 6.jpg" />
     <Content Include="viewcart.aspx" />
     <Content Include="adminhome.aspx" />
     <Content Include="App_Data\istore.mdf" />

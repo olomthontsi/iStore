@@ -13,5 +13,16 @@ namespace Takealot
         {
 
         }
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+            if (e.CommandName == "ViewDetails")
+            {
+                string productCode = e.CommandArgument.ToString();
+
+                Session["productcode"] = productCode;
+                Response.Redirect("details.aspx");
+            }
+        }
+
     }
 }

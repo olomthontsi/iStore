@@ -8,7 +8,7 @@
         <div class="wallpaper">
             <video autoplay muted loop playsinline class="background-video">
                 <source src="images/istore.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+
             </video>
 
             <div class="container-wrapper">

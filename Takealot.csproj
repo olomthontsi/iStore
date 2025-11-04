@@ -69,10 +69,15 @@
   <ItemGroup>
     <Content Include="aboutus.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="DeletePage.aspx" />
+    <Content Include="images\airpodss.mp4" />
     <Content Include="images\bag.jpg" />
     <Content Include="images\customers.jpg" />
+    <Content Include="images\customers.png" />
     <Content Include="images\orders.jpg" />
+    <Content Include="images\orders.png" />
     <Content Include="images\sales.jpg" />
+    <Content Include="images\sales.png" />
     <Content Include="Styles\inam2.css" />
     <Content Include="images\products\iphone12.jpg" />
     <Content Include="images\products\iphone12green.jpg" />
@@ -245,6 +250,13 @@
     </Compile>
     <Compile Include="AddNewUser.aspx.designer.cs">
       <DependentUpon>AddNewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePage.aspx.cs">
+      <DependentUpon>DeletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeletePage.aspx.designer.cs">
+      <DependentUpon>DeletePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateProduct.aspx.cs">
       <DependentUpon>UpdateProduct.aspx</DependentUpon>

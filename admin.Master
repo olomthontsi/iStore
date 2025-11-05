@@ -27,6 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
 
                 <ul class="navbar-nav m-auto my-2 my-lg-0">
+                 <li class="nav-item"><a class="nav-link" href="adminhome.aspx">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="AddNewUser.aspx">Add New User</a></li>
                     <li class="nav-item"><a class="nav-link" href="EditUser.aspx">Edit User</a></li>
                     <li class="nav-item"><a class="nav-link" href="UpdateProduct.aspx">Update Product</a></li>

@@ -7,18 +7,31 @@ using System.Web.UI.WebControls;
 
 namespace Takealot
 {
-	public partial class LoginPage : System.Web.UI.Page
-	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
-
-		}
-
-        protected void Button1_Click(object sender, EventArgs e)
+    public partial class LoginPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
         {
-			Response.Redirect("adminhome.aspx");
+
         }
 
-  
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            string username;
+            string password;
+
+
+            username = txtusername.Text;
+            password = txtpassword.Text;
+
+            for (int i = 0; i < GridView1.Rows.Count; i++)
+            {
+                if ((username == GridView1.Rows[i].Cells[3].Text) && (password == GridView1.Rows[i].Cells[5].Text))
+                {
+                    Session["username"] = username;
+
+                    Response.Redirect("adminhome.aspx");
+                }
+            }
+        }
     }
 }

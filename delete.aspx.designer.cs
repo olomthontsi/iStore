@@ -33,6 +33,33 @@ namespace Takealot
         protected global::System.Web.UI.WebControls.Button btndelete;
 
         /// <summary>
+        /// lblconfirmation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblconfirmation;
+
+        /// <summary>
+        /// btnyes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnyes;
+
+        /// <summary>
+        /// btnno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnno;
+
+        /// <summary>
         /// DataList1 control.
         /// </summary>
         /// <remarks>

@@ -89,6 +89,7 @@
     <Content Include="images\products\iphonered13.jpg" />
     <Content Include="images\products\iphonr12proo.jpg" />
     <Content Include="AddNewUser.aspx" />
+    <Content Include="Styles\inam3.css" />
     <Content Include="UpdateProduct.aspx" />
     <Content Include="viewcart.aspx" />
     <Content Include="adminhome.aspx" />

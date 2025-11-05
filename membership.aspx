@@ -1,120 +1,96 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="membership.aspx.cs" Inherits="Takealot.membership" %>
+﻿<%@ Page Title="Membership" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="membership.aspx.cs" Inherits="Takealot.membership" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style1 {
-            float: left;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Styles/OlwethuStyles.css" />
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <!DOCTYPE html>
-<html>
-<head>
-  <title>Signup Page</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <div class="registerPageContent">
+        <!-- Hero Banner -->
+        <div class="banner2">
+            <img src="/images/banner-membership.jpg" alt="Membership Banner" />
+            <div class="banner2-text">
+                <h1>Join Our Store</h1>
+                <p>Create your account and start shopping smarter.</p>
+            </div>
+        </div>
 
-<<<<<<< HEAD
-  
-  <link href="MilaStyles.css" rel="stylesheet">
-=======
-  <link href="Styles/MilaStyles.css" rel="stylesheet">
->>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
-</head>
+        <!-- Registration Section -->
+        <section class="contact-section" style="max-width: 650px; margin: 60px auto;">
+            <h2 class="text-center mb-4">Create Your Account</h2>
+            <p class="text-center mb-4">Please fill in the form below to sign up.</p>
 
+            <!-- Removed inner <form> tag to avoid double server-side form issue -->
+            <div class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="email" class="form-label"><b>Email Address</b></label>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter Email" TextMode="Email"></asp:TextBox>
+                </div>
 
- <body>
-      <form class="modal-content" action="/action_page.php">
-       <div class="imgcontainer">
-         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-         <img src="img_avatar2.png" alt="Avatar" class="avatar">
-       </div>
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+                <div class="mb-3">
+                    <label for="psw" class="form-label"><b>Password</b></label>
+                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Enter Password"></asp:TextBox>
+                </div>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="mb-3">
+                    <label for="psw-repeat" class="form-label"><b>Confirm Password</b></label>
+                    <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Repeat Password"></asp:TextBox>
+                    <div id="passwordMatchFeedback" class="invalid-feedback">Passwords must match.</div>
+                </div>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
+                <div class="form-check mb-3">
+                    <asp:CheckBox ID="chkRemember" runat="server" CssClass="form-check-input" Checked="true" />
+                    <label class="form-check-label" for="chkRemember">Remember me</label>
+                </div>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <p class="text-center small mb-4">
+                    By creating an account, you agree to our 
+                    <a href="#" style="color:dodgerblue;">Terms & Privacy</a>.
+                </p>
 
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-<<<<<<< HEAD
-        <form action="membership confirmation.aspx">
-            <button type="submit" class="signupbtn">Sign Up</button>
-=======
-        
-          <a href="membership confirmation.aspx">
-            <button type="submit" class="signupbtn">Sign Up</button></a>
-        
->>>>>>> 630c6939d0a30c7da46e29bbd3fee367cc397c35
-      </div>
+                <div class="d-flex justify-content-between">
+                    <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-outline-dark w-50 me-2" Text="Cancel" OnClientClick="history.back(); return false;" />
+                    <asp:Button ID="btnSignup" runat="server" CssClass="btn btn-custom w-50 ms-2" Text="Sign Up" />
+                </div>
+
+                <asp:Label ID="lblMessage" runat="server" Text="" Visible="False" CssClass="mt-3 text-danger"></asp:Label>
+            </div>
+        </section>
     </div>
-  </form>
 
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-(function () {
-  'use strict';
+    <!-- Password Match Validation Script -->
+    <script>
+        (function () {
+            'use strict';
 
-  const form = document.querySelector('.needs-validation');
-  const password = document.getElementById('psw');
-  const repeatPassword = document.getElementById('psw-repeat');
-  const feedback = document.getElementById('passwordMatchFeedback');
+            const form = document.querySelector('.needs-validation');
+            const password = document.getElementById('<%= txtPassword.ClientID %>');
+            const repeatPassword = document.getElementById('<%= txtConfirmPassword.ClientID %>');
+            const feedback = document.getElementById('passwordMatchFeedback');
 
-  // Form validation with password matching
-  form.addEventListener('submit', function (event) {
-    repeatPassword.setCustomValidity('');
+            form.addEventListener('submit', function (event) {
+                repeatPassword.setCustomValidity('');
 
-    if (password.value !== repeatPassword.value) {
-      repeatPassword.setCustomValidity("Passwords do not match");
-      feedback.textContent = "Passwords do not match.";
-    } else {
-      feedback.textContent = "Please repeat your password.";
-    }
+                if (password.value !== repeatPassword.value) {
+                    repeatPassword.setCustomValidity("Passwords do not match");
+                    feedback.textContent = "Passwords do not match.";
+                } else {
+                    feedback.textContent = "";
+                }
 
-    if (!form.checkValidity()) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
 
-    form.classList.add('was-validated');
-  }, false);
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
 
-  // Show/hide password toggles
-  const toggles = document.querySelectorAll('.toggle-password');
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const inputId = btn.getAttribute('data-target');
-      const input = document.getElementById(inputId);
-      const icon = btn.querySelector('i');
-
-      if (input.type === 'password') {
-        input.type = 'text';
-        icon.classList.replace('bi-eye', 'bi-eye-slash');
-      } else {
-        input.type = 'password';
-        icon.classList.replace('bi-eye-slash', 'bi-eye');
-      }
-    });
-  });
-
-})();
-</script>
-
-</body>
-</html>
 </asp:Content>

@@ -16,7 +16,20 @@ namespace Takealot
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            lblconfirmation.Visible = true;
+            btnno.Visible = true;
+            btnyes.Visible = true;
+        }
+
+        protected void btnyes_Click(object sender, EventArgs e)
+        {
             SqlDataSource1.Delete();
+            Response.Redirect("delete.aspx");
+        }
+
+        protected void btnno_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("delete.aspx");
         }
     }
 }

@@ -28,6 +28,7 @@
             </td>
             <td>
                 <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="Reqiured field" Font-Bold="True" Font-Size="Medium" ForeColor="Red">*Required field</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -36,6 +37,7 @@
             </td>
             <td>
                 <asp:TextBox ID="txtSurname" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtSurname" ErrorMessage="*Required field" Font-Bold="True" Font-Size="Medium" ForeColor="Red">*Required field</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -44,6 +46,7 @@
             </td>
             <td>
                 <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtUsername" ErrorMessage="*Required field" Font-Bold="True" Font-Size="Medium" ForeColor="Red">*Required field</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -52,6 +55,7 @@
             </td>
             <td>
                 <asp:TextBox ID="txtEmailAddress" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtEmailAddress" ErrorMessage="*Required field" Font-Bold="True" Font-Size="Medium" ForeColor="Red">*Required field</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -60,6 +64,7 @@
             </td>
             <td>
                 <asp:TextBox ID="txtMobileNumber" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtMobileNumber" ErrorMessage="*Required field" Font-Bold="True" Font-Size="Medium" ForeColor="Red">*Required field</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -68,6 +73,7 @@
             </td>
             <td>
                 <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtPassword" ErrorMessage="*Required field" Font-Bold="True" Font-Size="Medium" ForeColor="Red">*Required field</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>

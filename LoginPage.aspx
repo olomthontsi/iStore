@@ -4,11 +4,11 @@
      <link rel="stylesheet" href="/Styles/OlwethuStyles.css"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="loginPageContent">
+    <div class="loginPageContent">
         <div class="wallpaper">
             <video autoplay muted loop playsinline class="background-video">
                 <source src="images/istore.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+
             </video>
 
             <div class="container-wrapper">
@@ -19,9 +19,10 @@
                 </div>
 
                 <div class="mb-3">
+
                     <asp:Label ID="Label1" runat="server" CssClass="info" Text="Username"></asp:Label>
                     <div class="image-icon">
-                        <asp:TextBox ID="TextBox1" CssClass="textbox" runat="server" placeholder="Enter your username"></asp:TextBox>
+                        <asp:TextBox ID="txtusername" CssClass="textbox" runat="server" placeholder="Enter your username"></asp:TextBox>
                         <img src="images/hi.png" alt="User Icon">
                     </div>
                 </div>
@@ -29,12 +30,12 @@
                 <div class="auto-style1">
                     <asp:Label ID="Label2" runat="server" CssClass="info" Text="Password"></asp:Label>
                     <div class="image-icon">
-                        <asp:TextBox ID="TextBox2" CssClass="textbox" TextMode="Password" runat="server" placeholder="Enter your password"></asp:TextBox>
+                        <asp:TextBox ID="txtpassword" CssClass="textbox" TextMode="Password" runat="server" placeholder="Enter your password"></asp:TextBox>
                         <img id="toggleIcon" src="images/hiii.png" alt="Show/Hide" onclick="togglePassword()" />
                     </div>
                 </div>
 
-                <asp:Button ID="Button1" runat="server" CssClass="Login" Text="Login" />
+                <asp:Button ID="btnlogin" runat="server" CssClass="Login" Text="Login" OnClick="Button1_Click1" />
 
                 <div class="social-icons">
                     <img src="images/fb.jpg" alt="Facebook">
@@ -44,7 +45,19 @@
            </div>
             <div class="divider"></div>
             <div class="register-section">
-                <span class="register-text">Don't have an account? </span>
+                <span class="register-text">Don't have an acc<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Visible="False">
+                    <Columns>
+                        <asp:BoundField DataField="User_Id" HeaderText="User_Id" SortExpression="User_Id" />
+                        <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                        <asp:BoundField DataField="Last_Name" HeaderText="Last_Name" SortExpression="Last_Name" />
+                        <asp:BoundField DataField="User_Name" HeaderText="User_Name" SortExpression="User_Name" />
+                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                        <asp:BoundField DataField="password" HeaderText="password" SortExpression="password" />
+                        <asp:BoundField DataField="Phone_Number" HeaderText="Phone_Number" SortExpression="Phone_Number" />
+                    </Columns>
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [User_Id], [Name], [Last_Name], [User_Name], [Email], [password], [Phone_Number] FROM [Users]"></asp:SqlDataSource>
+                ount? </span>
                 <a href="membership.aspx" class="register-link">Register</a>
             </div>
         </div>

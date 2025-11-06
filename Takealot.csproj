@@ -12,12 +12,10 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44342</IISExpressSSLPort>
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <Use64BitIISExpress />
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -27,6 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
@@ -36,6 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -45,20 +45,32 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
   </ItemGroup>
+
   <ItemGroup>
+    <!-- ✅ Combined content from both versions -->
     <Content Include="Account.aspx" />
     <Content Include="AddToCart.aspx" />
+    <Content Include="aboutus.aspx" />
+    <Content Include="add.aspx" />
+    <Content Include="addnewproduct.aspx" />
     <Content Include="App_Data\istore.mdf" />
-    <Content Include="App_Data\istore_log.ldf" />
+    <Content Include="App_Data\istore_log.ldf">
+      <DependentUpon>istore.mdf</DependentUpon>
+    </Content>
     <Content Include="cart.aspx" />
     <Content Include="checkout.aspx" />
+    <Content Include="contact us.aspx" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Product.css" />
     <Content Include="Content\site.css" />
     <Content Include="Default.aspx" />
     <Content Include="DeleteProduct.aspx" />
     <Content Include="EditProduct.aspx" />
+    <Content Include="EditUser.aspx" />
     <Content Include="Header.aspx" />
     <Content Include="images\**\*" />
     <Content Include="index.aspx" />
@@ -70,12 +82,31 @@
     <Content Include="register.aspx" />
     <Content Include="responsive.css" />
     <Content Include="Site1.Master" />
+    <Content Include="AddNewUser.aspx" />
+    <Content Include="Styles\inam2.css" />
+    <Content Include="Styles\inam3.css" />
+    <Content Include="UpdateProduct.aspx" />
+    <Content Include="viewcart.aspx" />
+    <Content Include="adminhome.aspx" />
+    <Content Include="delete.aspx" />
+    <Content Include="details.aspx" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="membership confirmation.aspx" />
+    <Content Include="phones.aspx" />
+    <Content Include="static\*.js" />
+    <Content Include="Styles\*.css" />
+    <Content Include="membership.aspx" />
+    <Content Include="producttype.aspx" />
+    <Content Include="search.aspx" />
+    <Content Include="Style.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="Styles\sitemaster.css" />
     <Content Include="viewall.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
+
   <ItemGroup>
+    <!-- ✅ Combined code-behind -->
     <Compile Include="AddToCart.aspx.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>
@@ -86,6 +117,15 @@
     <Compile Include="Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addnewproduct.aspx.cs">
+      <DependentUpon>addnewproduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
@@ -95,16 +135,20 @@
     <Compile Include="EditProduct.aspx.cs">
       <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Phones.aspx.cs">
       <DependentUpon>Phones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
@@ -115,7 +159,6 @@
     </Compile>
     <Compile Include="viewall.aspx.cs">
       <DependentUpon>viewall.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ManageOrders.aspx.cs">
       <DependentUpon>ManageOrders.aspx</DependentUpon>
@@ -125,10 +168,11 @@
     </Compile>
     <Compile Include="TermsandConditions.aspx.cs">
       <DependentUpon>TermsandConditions.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
@@ -140,11 +184,11 @@
           <IISUrl>http://localhost:61513/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl />
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+
 </Project>

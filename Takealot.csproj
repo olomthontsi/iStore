@@ -73,6 +73,8 @@
     <Content Include="EditUser.aspx" />
     <Content Include="images\airpodss.mp4" />
     <Content Include="images\bag.jpg" />
+    <Content Include="images\car.png" />
+    <Content Include="images\cartt.png" />
     <Content Include="images\customers.jpg" />
     <Content Include="images\customers.png" />
     <Content Include="images\orders.jpg" />
@@ -89,7 +91,6 @@
     <Content Include="images\products\iphonegreejn.png" />
     <Content Include="images\products\iphonered13.jpg" />
     <Content Include="images\products\iphonr12proo.jpg" />
-    <Content Include="AddNewUser.aspx" />
     <Content Include="Styles\inam3.css" />
     <Content Include="UpdateProduct.aspx" />
     <Content Include="viewcart.aspx" />
@@ -251,13 +252,6 @@
     </Compile>
     <Compile Include="addnewproduct.aspx.designer.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AddNewUser.aspx.cs">
-      <DependentUpon>AddNewUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddNewUser.aspx.designer.cs">
-      <DependentUpon>AddNewUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditUser.aspx.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>

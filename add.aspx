@@ -5,9 +5,9 @@
 <style>
     .form-container {
         max-width: 1200px;
-        margin: 10px auto;
+        margin: 9px auto;
         padding: 30px;
-        background: #fff;
+        background:white;
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         font-family: 'Segoe UI', sans-serif;
@@ -16,13 +16,20 @@
     .personal-info {
         display: block;       
         width: 100%;
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 700;
         margin-bottom: 30px;
         text-transform: uppercase;
         text-align: center;   
         color: #333;
     }
+
+    .divider {
+    width: 60%;           
+    height: 3px;         
+    background-color: black;
+    margin: 0px auto 20px;      
+}
 
     .form-row,
     .contact-row,
@@ -53,16 +60,16 @@
     .contact-group input,
     .city-postal-group input,
     .dob-fields input {
-        width: 200px;
-        height:40px;
+        width: 150px;
+        height:35px;
         padding: 10px 14px;
         border: 2px solid #000;   /* black border */
-        border-radius: 6px;
+        border-radius: 0px;
         font-size: 14px;
         outline: 0px solid #000;  /* black outline on focus */
         box-sizing: border-box;
         background-color: white;    /* black background */
-        color: black;              
+        color: black;    
     }
 
     /* PLACEHOLDER */
@@ -121,46 +128,54 @@
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="form-container">
+    <div class="form-container">
     <asp:Label ID="PersonalInfo" runat="server" CssClass="personal-info" Text="Personal Information"></asp:Label>
+    <div class="divider"></div>
 
-    <!-- USER ID -->
+
     <div class="form-row">
+                <asp:Label ID="IblId" runat="server" Text="ID"></asp:Label>
+        <asp:TextBox ID="txtID" runat="server"  Height="36px" Width="53px" Enabled="False"></asp:TextBox>  
         <asp:Label ID="Ibluserid" runat="server" Text="User ID"></asp:Label>
-        <asp:TextBox ID="txtuserid" runat="server" placeholder="Required field"></asp:TextBox>  
+        <asp:TextBox ID="txtuserid" runat="server" placeholder="Required" Height="36px" Width="91px"></asp:TextBox>  
     </div>
 
-    <!-- FIRST NAME & LAST NAME -->
     <div class="form-row">
         <asp:Label ID="IblFirstName" runat="server" Text="First Name"></asp:Label>
         <asp:TextBox ID="txtName" runat="server" placeholder="Required field"></asp:TextBox> 
         <asp:Label ID="IblLastName" runat="server" Text="Last Name"></asp:Label>
-        <asp:TextBox ID="txtLastName" runat="server" placeholder="Required field"></asp:TextBox> 
+        <asp:TextBox ID="txtLastName" runat="server" placeholder="Required field" Height="38px" Width="163px"></asp:TextBox> 
+         <asp:Label ID="IblUserName" runat="server" Text="User Name"></asp:Label>
+        <asp:TextBox ID="txtUsername" runat="server" placeholder="Required field" Height="38px" Width="163px"></asp:TextBox> 
     </div>
-
+        <div class="form-row">
+        <asp:Label ID="IblDob" runat="server" Text="Date of Birth"></asp:Label>
+        <div class="dob-fields">
+            <asp:TextBox ID="txtDay" runat="server" maxlength="2" placeholder="DD" Height="36px" Width="60px"></asp:TextBox>
+            <span class="separator">/</span>
+            <asp:TextBox ID="txtMonth" runat="server" maxlength="4" placeholder="MM" Height="36px" Width="126px"></asp:TextBox>
+            <span class="separator">/</span>
+            <asp:TextBox ID="txtYear" runat="server" maxlength="4" placeholder="YYYY" Height="36px" Width="67px"></asp:TextBox>
+        </div>
+    </div>
 
     <div class="contact-row">
         <div class="contact-group">
-            <asp:Label ID="iblEmail" runat="server" Text="Email"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" placeholder="Required field"></asp:TextBox>
+            <asp:Label ID="iblEmail" runat="server" Text="Email Address"></asp:Label>
+            <asp:TextBox ID="txtEmail" runat="server" placeholder="Required field" Height="36px" Width="151px"></asp:TextBox>
         </div>
         <div class="contact-group">
-            <asp:Label ID="IblPhoneNumber" runat="server" Text="Phone"></asp:Label>
-            <asp:TextBox ID="txtPhoneNumber" runat="server" placeholder="Required field"></asp:TextBox>
+            <asp:Label ID="IblPhoneNumber" runat="server" Text="Phone Number"></asp:Label>
+            <asp:TextBox ID="txtPhoneNumber" runat="server" placeholder="Required field" Height="34px" Width="175px"></asp:TextBox>
+              </div>
+                    <div class="contact-group">
+            <asp:Label ID="Ibl1Password" runat="server" Text="Password"></asp:Label>
+            <asp:TextBox ID="TxtPassword" runat="server" placeholder="Required field" Height="34px" Width="172px"></asp:TextBox>
         </div>
     </div>
 
 
-    <div class="form-row">
-        <asp:Label ID="IblDob" runat="server" Text="Date of Birth"></asp:Label>
-        <div class="dob-fields">
-            <asp:TextBox ID="txtDate" runat="server" maxlength="2" placeholder="DD"></asp:TextBox>
-            <span class="separator">/</span>
-            <asp:TextBox ID="txtMonth" runat="server" maxlength="2" placeholder="MM"></asp:TextBox>
-            <span class="separator">/</span>
-            <asp:TextBox ID="txtYear" runat="server" maxlength="4" placeholder="YYYY"></asp:TextBox>
-        </div>
-    </div>
+
 
     <div class="address-city-row">
         <div class="contact-group">
@@ -168,27 +183,32 @@
             <asp:TextBox ID="txtAddress" runat="server" placeholder="Required field"></asp:TextBox>
         </div>
         <div class="contact-group">
-            <asp:Label ID="IblCity" runat="server" Text="City"></asp:Label>
+            <asp:Label ID="IblSuburb" runat="server" Text="Suburb"></asp:Label>
+            <asp:TextBox ID="txtSuburb" runat="server" placeholder="Required field"></asp:TextBox>
+        </div>
+                <div class="contact-group">
+             <asp:Label ID="IblCity" runat="server" Text="City"></asp:Label>
             <asp:TextBox ID="txtCity" runat="server" placeholder="Required field"></asp:TextBox>
         </div>
     </div>
 
-    <div class="country-postal-row">
-        <div class="contact-group">
-            <asp:Label ID="IblCountry" runat="server" Text="Country"></asp:Label>
-            <asp:TextBox ID="txtCountry" runat="server" placeholder="Required field"></asp:TextBox>
-        </div>
-        <div class="contact-group">
-            <asp:Label ID="IblPostalCode" runat="server" Text="Postal Code"></asp:Label>
-            <asp:TextBox ID="txtPostalCode" runat="server" placeholder="Required field"></asp:TextBox>
-        </div>
-    </div>
+  
 
-    <div class="form-row">
+<div class="country-postal-row">
+            <div class="contact-group">
+            <asp:Label ID="IblPostalCode" runat="server" Text="Postal Code"></asp:Label>
+            <asp:TextBox ID="txtPostalCode" runat="server" placeholder="Required field" Height="38px" Width="78px"></asp:TextBox>
+        </div>
+    <div class="contact-group">
+        <asp:Label ID="IblCountry" runat="server" Text="Country"></asp:Label>
+        <asp:TextBox ID="txtCountry" runat="server" placeholder="Required field"></asp:TextBox>
+    </div>
+    <div class="contact-group">
         <asp:Label ID="IblProvince" runat="server" Text="Province"></asp:Label>
         <asp:TextBox ID="txtProvince" runat="server" placeholder="Required field"></asp:TextBox>
     </div>
+</div>
 
-    <asp:Button ID="btnAdd" class="update-btn" runat="server" Text="Add User" />
-    </div>
-</asp:Content>
+    <asp:Button ID="btnAdd" class="update-btn" runat="server" Text="Add User" OnClick="btnAdd_Click" />
+          </div>
+    </asp:Content>

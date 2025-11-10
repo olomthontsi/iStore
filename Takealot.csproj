@@ -51,12 +51,37 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- ✅ Combined content from both versions -->
+    <!-- Combined Content from both versions -->
     <Content Include="Account.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="aboutus.aspx" />
     <Content Include="add.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="EditUser.aspx" />
+    <Content Include="images\airpodss.mp4" />
+    <Content Include="images\bag.jpg" />
+    <Content Include="images\car.png" />
+    <Content Include="images\cartt.png" />
+    <Content Include="images\customers.jpg" />
+    <Content Include="images\customers.png" />
+    <Content Include="images\orders.jpg" />
+    <Content Include="images\orders.png" />
+    <Content Include="images\sales.jpg" />
+    <Content Include="images\sales.png" />
+    <Content Include="Styles\inam2.css" />
+    <Content Include="images\products\iphone12.jpg" />
+    <Content Include="images\products\iphone12green.jpg" />
+    <Content Include="images\products\iphone12prooo.png" />
+    <Content Include="images\products\iphone12prr.jpg" />
+    <Content Include="images\products\iphone12purple.jpg" />
+    <Content Include="images\products\iphoneblack13.jpg" />
+    <Content Include="images\products\iphonegreejn.png" />
+    <Content Include="images\products\iphonered13.jpg" />
+    <Content Include="images\products\iphonr12proo.jpg" />
+    <Content Include="Styles\inam3.css" />
+    <Content Include="UpdateProduct.aspx" />
+    <Content Include="viewcart.aspx" />
+    <Content Include="adminhome.aspx" />
     <Content Include="App_Data\istore.mdf" />
     <Content Include="App_Data\istore_log.ldf">
       <DependentUpon>istore.mdf</DependentUpon>
@@ -70,7 +95,6 @@
     <Content Include="Default.aspx" />
     <Content Include="DeleteProduct.aspx" />
     <Content Include="EditProduct.aspx" />
-    <Content Include="EditUser.aspx" />
     <Content Include="Header.aspx" />
     <Content Include="images\**\*" />
     <Content Include="index.aspx" />
@@ -83,11 +107,6 @@
     <Content Include="responsive.css" />
     <Content Include="Site1.Master" />
     <Content Include="AddNewUser.aspx" />
-    <Content Include="Styles\inam2.css" />
-    <Content Include="Styles\inam3.css" />
-    <Content Include="UpdateProduct.aspx" />
-    <Content Include="viewcart.aspx" />
-    <Content Include="adminhome.aspx" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
     <Content Include="LoginPage.aspx" />
@@ -106,7 +125,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- ✅ Combined code-behind -->
+    <!-- Combined Code-behind -->
     <Compile Include="AddToCart.aspx.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
     </Compile>

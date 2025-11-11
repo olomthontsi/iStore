@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - Takealot</h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Takealot">Takealot</a></strong></td><td>Takealot.csproj</td><td class="textCentered"><a href="#TakealotError">26</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Takealot'); return false;">228</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">Solution</span></a></strong></td><td>Takealot.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#SolutionWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">2</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="Takealot" /><h3>Takealot</h3><table><tr id="TakealotHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>AddToCart.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\AddToCart.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Account.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Account.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>App_Start\RouteConfig.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\App_Start\RouteConfig.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Checkout.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Checkout.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Default.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Default.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>DeleteProduct.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\DeleteProduct.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>EditProduct.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\EditProduct.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>ProductDetails.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\ProductDetails.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>ManageOrders.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\ManageOrders.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>ManageProduct.aspx.cs:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\ManageProduct.aspx.cs</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Account.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Account.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>AddToCart.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\AddToCart.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>cart.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\cart.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>checkout.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\checkout.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Content\bootstrap.min.css:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Content\bootstrap.min.css</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Content\Product.css:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Content\Product.css</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Content\site.css:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Content\site.css</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Default.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Default.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>DeleteProduct.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\DeleteProduct.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>EditProduct.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\EditProduct.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>Header.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Header.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>ManageOrders.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\ManageOrders.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>ManageProduct.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\ManageProduct.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>ProductDetails.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\ProductDetails.aspx</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>responsive.css:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\responsive.css</span></td></tr><tr name="ErrorRowClassTakealot"><td class="IconErrorEncoded"><a name="TakealotError" /></td><td class="messageCell"><strong>AddNewUser.aspx:
+        </strong><span>Failed to backup file as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\AddNewUser.aspx</span></td></tr><tr name="MessageRowHeaderShowTakealot"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="TakealotMessage" onclick="ToggleMessageVisibility('Takealot'); return false;">
+          Show 228 additional messages
+        </a></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Takealot.csproj:
+        </strong><span>Project file successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Takealot.csproj</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Takealot.csproj.user:
+        </strong><span>Project user file successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Takealot.csproj.user</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>add.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\add.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>add.aspx.designer.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\add.aspx.designer.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>addnewproduct.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\addnewproduct.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>EditUser.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\EditUser.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>EditUser.aspx.designer.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\EditUser.aspx.designer.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>index.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\index.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>login.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\login.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Phones.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Phones.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Properties\AssemblyInfo.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Properties\AssemblyInfo.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>register.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\register.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>viewall.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\viewall.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>TermsandConditions.aspx.cs:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\TermsandConditions.aspx.cs</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>aboutus.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\aboutus.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>add.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\add.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>addnewproduct.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\addnewproduct.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>EditUser.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\EditUser.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\airpodss.mp4:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\airpodss.mp4</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\bag.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\bag.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\car.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\car.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\cartt.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\cartt.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\customers.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\customers.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\customers.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\customers.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\orders.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\orders.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\orders.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\orders.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sales.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sales.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sales.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sales.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\inam2.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\inam2.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12green.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12green.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12prooo.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12prooo.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12prr.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12prr.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12purple.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12purple.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphoneblack13.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphoneblack13.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonegreejn.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonegreejn.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonered13.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonered13.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonr12proo.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonr12proo.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\inam3.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\inam3.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>UpdateProduct.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\UpdateProduct.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>viewcart.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\viewcart.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>adminhome.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\adminhome.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>App_Data\istore.mdf:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\App_Data\istore.mdf</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>App_Data\istore_log.ldf:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\App_Data\istore_log.ldf</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>contact us.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\contact us.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\airpodss.mp4:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\airpodss(2).mp4</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\airpodss.mp4:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\airpodss(2).mp4</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\Apple Watch Series 6.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\Apple Watch Series 6.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\applestore.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\applestore.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\bag.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\bag(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\bag.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\bag(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\banner.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\banner.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\business.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\business.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\car.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\car(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\car.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\car(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\cart.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\cart.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\cartt.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\cartt(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\cartt.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\cartt(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\click.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\click.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\clock.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\clock.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\CONTACT.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\CONTACT.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\customers.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\customers(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\customers.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\customers(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\customers.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\customers(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\customers.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\customers(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\delivery.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\delivery.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\email.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\email.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\employees.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\employees.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\facebook.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\facebook.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\fb.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\fb.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\hi.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\hi.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\hiii.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\hiii.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\hours.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\hours.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\images.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\images.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\Inam.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\Inam.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\insta.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\insta.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\instag.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\instag.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\IPHONE BANNER.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\IPHONE BANNER.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\iphone17series.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\iphone17series.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 1.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 1.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 2.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 2.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 3.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 3.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 4.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 4.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 5.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 5.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 6.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 6.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore slide 7.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore slide 7.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\istore.mp4:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\istore.mp4</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\linkedin.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\linkedin.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\liyema.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\liyema.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\location.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\location.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\login.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\login.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\LOGINN.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\LOGINN.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\logo.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\logo.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\mila.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\mila.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\offers.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\offers.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\olo.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\olo.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\online.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\online.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\orders.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\orders(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\orders.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\orders(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\orders.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\orders(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\orders.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\orders(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\phone.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\phone.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\airpods.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\airpods.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\airpods4.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\airpods4.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\airpodsmax.jpeg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\airpodsmax.jpeg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\airtag.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\airtag.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\Apple HomePod.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\Apple HomePod.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\appletv.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\appletv.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\DJIosmo.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\DJIosmo.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\gopro.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\gopro.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\imac.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\imac.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\imacblue.jpeg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\imacblue.jpeg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\imacgreen.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\imacgreen.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\imacpink.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\imacpink.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadairblue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadairblue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadairgold.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadairgold.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadairgrey.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadairgrey.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadairpurple.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadairpurple.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadblue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadblue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadgray.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadgray.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadgreen.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadgreen.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\ipadpurple.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\ipadpurple.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12green.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12green(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12green.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12green(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12prooo.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12prooo(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12prooo.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12prooo(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12prr.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12prr(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12prr.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12prr(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12purple.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12purple(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone12purple.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone12purple(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13black.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13black.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13blue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13blue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13promaxblack.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13promaxblack.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13promaxblack.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13promaxblack.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13promaxblue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13promaxblue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13promaxgreen.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13promaxgreen.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13promaxwhite.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13promaxwhite.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone13white.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone13white.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14black.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14black.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14blue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14blue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14problack.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14problack.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14problackk.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14problackk.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14progold.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14progold.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14progreen.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14progreen.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14promax.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14promax.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14propurple.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14propurple.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14prored.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14prored.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone14red.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone14red.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15black.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15black.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15blue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15blue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15green.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15green.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15problack.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15problack.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15promax (1).jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15promax (1).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15propurple.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15propurple.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15prosilver.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15prosilver.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone15prowhite.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone15prowhite.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone16black.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone16black.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone16pink.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone16pink.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone16problack.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone16problack.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone16progold.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone16progold.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone16prowhite.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone16prowhite.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone16white.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone16white.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone17black.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone17black.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone17green.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone17green.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone17problue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone17problue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone17progold.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone17progold.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone17prosilver.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone17prosilver.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphone17silver.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphone17silver.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphoneairblack.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphoneairblack.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphoneairblue.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphoneairblue.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphoneairwhite.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphoneairwhite.jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphoneblack13.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphoneblack13(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphoneblack13.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphoneblack13(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonegreejn.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonegreejn(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonegreejn.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonegreejn(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonered13.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonered13(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonered13.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonered13(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonr12proo.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonr12proo(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\iphonr12proo.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\iphonr12proo(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\products\pouch.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\products\pouch.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\repairs.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\repairs.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sales.jpg:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sales(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sales.jpg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sales(2).jpg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sales.png:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sales(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sales.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sales(2).png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\sim.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\sim.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\Tech.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\Tech.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\tradein.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\tradein.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\TWITTER.jpeg:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\TWITTER.jpeg</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\wapp.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\wapp.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\warranty.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\warranty.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>images\YT.png:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\images\YT.png</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>index.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\index.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>login.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\login.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Phones.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Phones.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>register.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\register.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Site1.Master:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Site1.Master</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>delete.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\delete.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>details.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\details.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>LoginPage.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\LoginPage.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>membership confirmation.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\membership confirmation.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>phones.aspx:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\phones(2).aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>phones.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\phones(2).aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>static\liyemma.js:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\static\liyemma.js</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>static\mila.js:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\static\mila.js</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>static\olo.js:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\static\olo.js</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\inam2.css:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\inam2(2).css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\inam2.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\inam2(2).css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\inam3.css:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\inam3(2).css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\inam3.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\inam3(2).css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\InamStyles.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\InamStyles.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\LiyemaStyle.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\LiyemaStyle.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\MilaStyles.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\MilaStyles.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\OlwethuStyles.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\OlwethuStyles.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\sitemaster.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\sitemaster.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>membership.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\membership.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>producttype.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\producttype.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>search.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\search.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Style.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Style.css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>TermsandConditions.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\TermsandConditions.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\sitemaster.css:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\sitemaster(2).css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Styles\sitemaster.css:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Styles\sitemaster(2).css</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>viewall.aspx:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\viewall.aspx</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Web.config:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Web.config</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Takealot.csproj:
+        </strong><span>Project migrated successfully</span></td></tr><tr name="MessageRowClassTakealot" style="display: none"><td class="IconInfoEncoded"><a name="TakealotMessage" /></td><td class="messageCell"><strong>Takealot.csproj:
+        </strong><span>Scan complete: Migration not required for project files.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideTakealot"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="TakealotMessage" onclick="ToggleMessageVisibility('Takealot'); return false;">
+          Hide 228 additional messages
+        </a></td></tr></table><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">Solution</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassSolution"><td class="IconWarningEncoded"><a name="SolutionWarning" /></td><td class="messageCell"><strong>Takealot.sln:
+        </strong><span>Visual Studio needs to make non-functional changes to this project in order to enable the project to open in released versions of Visual Studio newer than Visual Studio 2010 SP1 without impacting project behavior.</span></td></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Takealot.sln:
+        </strong><span>File successfully backed up as C:\Users\142502498\source\repos\InamMenziwa\Takealot\Backup\Takealot.sln</span></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Takealot.sln:
+        </strong><span>Solution migrated successfully</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table></div></div></body></html>

@@ -1,0 +1,275 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    background-color:black; 
+
+}
+
+.navbar-brand img {
+    height: 55px;
+    width: 118px;
+}
+
+.nav-item {
+    font-family: 'Raleway', sans-serif;
+    color: white; 
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #d3d3d3; 
+    }
+
+
+.search, .login, .cart {
+    height: 28px;
+    width: 30px;
+    cursor: pointer;
+}
+    .login:hover, .cart:hover, .search:hover {
+        transform: scale(1.1);
+    }
+
+.textbox {
+    border-radius: 60px;
+    outline: none;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+}
+
+    .textbox::placeholder {
+        color: #555;
+    }
+
+      /* Footer */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+    .footer-column h5 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .footer-column p {
+        margin: 6px 0;
+    }
+
+    .footer-column a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.95em;
+        transition: color 0.3s ease;
+    }
+
+        .footer-column a:hover {
+            color: #d3d3d3;
+            text-decoration: underline;
+        }
+
+.subscribe-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .subscribe-form input[type="email"] {
+        padding: 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        font-size: 0.95em;
+    }
+
+    .subscribe-form input::placeholder {
+        color: white;
+        opacity: 0.7;
+    }
+
+    .subscribe-form button {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        .subscribe-form button:hover {
+            background-color: #e1e1e1;
+        }
+
+.footer-top-logo img {
+    height: 50px;
+}
+
+.footer-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    height: 220px;
+}
+
+.gallery {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 15s linear infinite;
+    position: absolute;
+    left: 0;
+}
+
+    .gallery img {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.stats-wrapper {
+    position: relative;
+    z-index: 10;
+    padding: 40px 20px;
+    margin-top: 0px;
+    clear: both;
+}
+
+.stats-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 1;
+}
+
+    .stats-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+
+
+    .icon-wrapper img {
+        width: 58px;
+        height: 48px;
+    }
+
+.stat-label {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    color: #212529;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.action-section {
+    padding: 40px 0;
+}
+
+.action-col {
+    position: relative;
+}
+
+    .action-col:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 10%;
+        height: 80%;
+        width: 1px;
+        background-color: #ccc;
+    }
+
+    .action-col h4 {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .action-col p {
+        color: #555;
+        font-size: 15px;
+    }
+    

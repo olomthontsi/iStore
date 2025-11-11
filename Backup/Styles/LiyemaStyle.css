@@ -1,0 +1,57 @@
+﻿body {
+}
+
+.catcher {
+    background-color: #209AE3;
+}
+
+.product-card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    text-align: center;
+}
+
+    .product-card img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+.product-name {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+.product-price {
+    color: #198754; /* bootstrap green */
+    font-size: 12px;
+    margin: 2px 0 0 0; /* minimal spacing */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding: 10px;
+}
+#productsCarousel {
+    padding-top: 60px; /* Adds space inside the container */
+    padding-bottom: 60px;
+}
+
+banner {
+    opacity: 0; /* start hidden */
+    transform: translateY(-20px); /* slightly above */
+    transition: opacity 3s ease, transform 1s ease; /* smooth transition */
+}
+
+.banner.show {
+    opacity: 1; /* fully visible */
+    transform: translateY(0); /* slide to normal position */
+}
+

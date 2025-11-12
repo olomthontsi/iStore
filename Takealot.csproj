@@ -56,8 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Combined Content from both versions -->
-    <Content Include="Account.aspx" />
-    <Content Include="AddToCart.aspx" />
     <Content Include="aboutus.aspx" />
     <Content Include="add.aspx" />
     <Content Include="addnewproduct.aspx" />
@@ -90,25 +88,15 @@
     <Content Include="App_Data\istore_log.ldf">
       <DependentUpon>istore.mdf</DependentUpon>
     </Content>
-    <Content Include="cart.aspx" />
-    <Content Include="checkout.aspx" />
     <Content Include="contact us.aspx" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Product.css" />
     <Content Include="Content\site.css" />
-    <Content Include="Default.aspx" />
-    <Content Include="DeleteProduct.aspx" />
-    <Content Include="EditProduct.aspx" />
-    <Content Include="Header.aspx" />
     <Content Include="images\**\*" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="ManageOrders.aspx" />
-    <Content Include="ManageProduct.aspx" />
     <Content Include="Phones.aspx" />
-    <Content Include="ProductDetails.aspx" />
     <Content Include="register.aspx" />
-    <Content Include="responsive.css" />
     <Content Include="Site1.Master" />
     <Content Include="AddNewUser.aspx" />
     <Content Include="delete.aspx" />
@@ -136,16 +124,7 @@
     <Compile Include="AddNewUser.aspx.designer.cs">
       <DependentUpon>AddNewUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddToCart.aspx.cs">
-      <DependentUpon>AddToCart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account.aspx.cs">
-      <DependentUpon>Account.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Checkout.aspx.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-    </Compile>
     <Compile Include="add.aspx.cs">
       <DependentUpon>add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,15 +135,6 @@
     <Compile Include="addnewproduct.aspx.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DeleteProduct.aspx.cs">
-      <DependentUpon>DeleteProduct.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EditProduct.aspx.cs">
-      <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditUser.aspx.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>
@@ -185,9 +155,6 @@
       <DependentUpon>Phones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProductDetails.aspx.cs">
-      <DependentUpon>ProductDetails.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
@@ -196,12 +163,6 @@
     <Compile Include="viewall.aspx.cs">
       <DependentUpon>viewall.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ManageOrders.aspx.cs">
-      <DependentUpon>ManageOrders.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ManageProduct.aspx.cs">
-      <DependentUpon>ManageProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="TermsandConditions.aspx.cs">
       <DependentUpon>TermsandConditions.aspx</DependentUpon>

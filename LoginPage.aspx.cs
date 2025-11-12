@@ -25,7 +25,7 @@ namespace Takealot
 
             for (int i = 0; i < GridView1.Rows.Count; i++)
             {
-                if ((username == GridView1.Rows[i].Cells[3].Text) && (password == GridView1.Rows[i].Cells[5].Text))
+                if ((username == GridView1.Rows[i].Cells[0].Text) && (password == GridView1.Rows[i].Cells[1].Text))
                 {
                     Session["username"] = username;
 

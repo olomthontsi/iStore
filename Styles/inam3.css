@@ -1,22 +1,11 @@
-﻿/* --- Global Reset --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f3f4f6;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #333;
-}
-
+﻿
 /* --- Main Admin Container --- */
 .admin-container {
+    justify-content:center;
     max-width: 1200px;
-    margin-top: 0px auto !important;
+    margin: 9px auto;
     padding: 30px;
-    background: #fff;
+    background: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }

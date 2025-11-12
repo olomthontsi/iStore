@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="add.aspx.cs" Inherits="Takealot.add" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-   
+        <link rel="stylesheet" href="/Styles/OlwethuStyles.css"/>
 <style>
     .form-container {
         max-width: 1200px;
@@ -63,24 +63,24 @@
         width: 150px;
         height:35px;
         padding: 10px 14px;
-        border: 2px solid #000;   /* black border */
+        border: 1px solid #ccc;
         border-radius: 0px;
         font-size: 14px;
-        outline: 0px solid #000;  /* black outline on focus */
+        outline: 0px solid black;  
         box-sizing: border-box;
-        background-color: white;    /* black background */
+        background-color: white;  
         color: black;    
     }
 
-    /* PLACEHOLDER */
+
     .form-row input::placeholder,
     .contact-group input::placeholder,
     .city-postal-group input::placeholder,
     .dob-fields input::placeholder {
-        color: #aaa; /* light gray placeholder */
+        color: #aaa; 
     }
 
-    /* DOB FIELDS */
+
     .dob-fields {
         display: flex;
         gap: 5px;
@@ -90,11 +90,11 @@
     .dob-fields input {
         width: 70px;
         padding: 8px;
-        border: 1px solid #000;   /* black border */
+        border: 1px solid black;   
         border-radius: 6px;
-        outline: 1px solid #000;  /* black outline */
-        background-color: #000;   /* black background */
-        color: #fff;              /* white text */
+        outline: 1px solid black;  
+        background-color: black;   
+        color: white;              
         text-align: center;
         font-size: 14px;
         box-sizing: border-box;
@@ -105,7 +105,7 @@
         color: #333;
     }
 
-    /* UPDATE BUTTON */
+
     .update-btn {
         width: 350px;
         padding: 12px 0;
@@ -192,8 +192,7 @@
         </div>
     </div>
 
-  
-
+ 
 <div class="country-postal-row">
             <div class="contact-group">
             <asp:Label ID="IblPostalCode" runat="server" Text="Postal Code"></asp:Label>

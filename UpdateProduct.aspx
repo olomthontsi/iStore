@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="UpdateProduct.aspx.cs" Inherits="Takealot.UpdateProduct" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
          .form-container {
@@ -254,14 +256,14 @@
    <td>
                &nbsp;</td>
                              <td>
-               &nbsp;</td>
+                                 &nbsp;</td>
                              <td>
-                                 <asp:Button ID="btnUpdate" CssClass="newStyle1" runat="server" Text="Update" Height="35px" Width="300px" />
+                                 <asp:Button ID="btnUpdate" CssClass="newStyle1" runat="server" Text="Update" Height="35px" Width="300px" OnClick="btnUpdate_Click1" />
                           </td>
        </tr>
            </table>
            <br />
-           <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+           <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnRowDataBound="GridView1_RowDataBound" >
                <Columns>
                    <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
                    <asp:BoundField DataField="Product_Code" HeaderText="Product_Code" SortExpression="Product_Code" />
@@ -272,11 +274,11 @@
                    <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
                    <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
                    <asp:BoundField DataField="Product_Type" HeaderText="Product_Type" SortExpression="Product_Type" />
-                   <asp:BoundField DataField="Cost_Price" HeaderText="Cost_Price" SortExpression="Cost_Price" />
                    <asp:BoundField DataField="Images" HeaderText="Images" SortExpression="Images" />
+                   <asp:BoundField DataField="Cost_Price" HeaderText="Cost_Price" SortExpression="Cost_Price" />
                </Columns>
            </asp:GridView>
-           <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Product] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Product] ([Id], [Product_Code], [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Cost_Price], [Images]) VALUES (@Id, @Product_Code, @Model_Name, @Storage_capacity, @Colour, @Price, @Quantity, @Description, @Product_Type, @Cost_Price, @Images)" SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Cost_Price], [Images] FROM [Product]" UpdateCommand="UPDATE [Product] SET [Product_Code] = @Product_Code, [Model_Name] = @Model_Name, [Storage_capacity] = @Storage_capacity, [Colour] = @Colour, [Price] = @Price, [Quantity] = @Quantity, [Description] = @Description, [Product_Type] = @Product_Type, [Cost_Price] = @Cost_Price, [Images] = @Images WHERE [Id] = @Id">
+           <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Product] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Product] ([Id], [Product_Code], [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Images], [Cost_Price]) VALUES (@Id, @Product_Code, @Model_Name, @Storage_capacity, @Colour, @Price, @Quantity, @Description, @Product_Type, @Images, @Cost_Price)" SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Images], [Cost_Price] FROM [Product] WHERE ([Product_Code] = @Product_Code)" UpdateCommand="UPDATE [Product] SET [Product_Code] = @Product_Code, [Model_Name] = @Model_Name, [Storage_capacity] = @Storage_capacity, [Colour] = @Colour, [Price] = @Price, [Quantity] = @Quantity, [Description] = @Description, [Product_Type] = @Product_Type, [Images] = @Images, [Cost_Price] = @Cost_Price WHERE [Id] = @Id">
                <DeleteParameters>
                    <asp:Parameter Name="Id" Type="Int32" />
                </DeleteParameters>
@@ -290,12 +292,18 @@
                    <asp:Parameter Name="Quantity" Type="Int32" />
                    <asp:Parameter Name="Description" Type="String" />
                    <asp:Parameter Name="Product_Type" Type="String" />
-                   <asp:Parameter Name="Cost_Price" Type="Decimal" />
                    <asp:Parameter Name="Images" Type="String" />
+                   <asp:Parameter Name="Cost_Price" Type="Decimal" />
                </InsertParameters>
-               <UpdateParameters>
+
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="txtProductCode" Name="Product_Code" PropertyName="Text" Type="String" />
+               </SelectParameters>
+
+                
+                <UpdateParameters>
                    <asp:controlParameter ControlID="txtPcode" Name="Product_Code" Type="String" />
-                   <asp:controlParameter ControlID="txtModelCode" Name="Model_Name" Type="String" />
+                   <asp:controlParameter ControlID="txtModelName" Name="Model_Name" Type="String" />
                    <asp:controlParameter ControlID="txtStorageCapacity"  Name="Storage_capacity" Type="String" />
                    <asp:controlParameter ControlID="txtColour"  Name="Colour" Type="String" />
                    <asp:controlParameter ControlID="txtPrice"  Name="Price" Type="Decimal" />

@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/Styles/LiyemaStyle.css" />
 
   <style>
@@ -54,7 +54,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-  <div class="w-100 text-center py-3 banner" style="background-color: #209AE3; color: white; font-family: Arial, sans-serif;">
+    <div class="w-100 text-center py-3 banner" style="background-color: #209AE3; color: white; font-family: Arial, sans-serif;">
     Get the Fastest delivery for Free. Shop online at iStore!
   </div>
 

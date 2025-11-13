@@ -61,9 +61,9 @@
     <Content Include="addnewproduct.aspx" />
     <Content Include="EditUser.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="mac.aspx" />
     <Content Include="Phones.aspx" />
     <Content Include="Site1.Master" />
-    <Content Include="AddNewUser.aspx" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
     <Content Include="LoginPage.aspx" />
@@ -90,19 +90,40 @@
   </ItemGroup>
   <ItemGroup>
     <!-- All code-behind files -->
-    <Compile Include="AddNewUser.aspx.cs">
-      <DependentUpon>AddNewUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddNewUser.aspx.designer.cs">
-      <DependentUpon>AddNewUser.aspx</DependentUpon>
-    </Compile>
     <Compile Include="admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.aspx.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminhome.aspx.designer.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mac.aspx.cs">
+      <DependentUpon>mac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mac.aspx.designer.cs">
+      <DependentUpon>mac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership.aspx.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership.aspx.designer.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -136,6 +157,13 @@
     <Compile Include="Phones.aspx.cs">
       <DependentUpon>Phones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.aspx.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateProduct.aspx.designer.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewall.aspx.cs">
       <DependentUpon>viewall.aspx</DependentUpon>

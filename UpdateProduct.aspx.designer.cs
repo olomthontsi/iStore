@@ -15,22 +15,31 @@ namespace Takealot
     {
 
         /// <summary>
-        /// IblSearchByProductCode control.
+        /// IblUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IblSearchByProductCode;
+        protected global::System.Web.UI.WebControls.Label IblUpdate;
 
         /// <summary>
-        /// txtSearchByProductCode control.
+        /// IblProdctCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchByProductCode;
+        protected global::System.Web.UI.WebControls.Label IblProdctCode;
+
+        /// <summary>
+        /// txtProductCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtProductCode;
 
         /// <summary>
         /// btnSearch control.
@@ -42,22 +51,22 @@ namespace Takealot
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// IblId2 control.
+        /// IblId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IblId2;
+        protected global::System.Web.UI.WebControls.Label IblId;
 
         /// <summary>
-        /// txtId2 control.
+        /// txtId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId2;
+        protected global::System.Web.UI.WebControls.TextBox txtId;
 
         /// <summary>
         /// IblProductCode control.
@@ -69,13 +78,13 @@ namespace Takealot
         protected global::System.Web.UI.WebControls.Label IblProductCode;
 
         /// <summary>
-        /// txtProductCode control.
+        /// txtPcode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProductCode;
+        protected global::System.Web.UI.WebControls.TextBox txtPcode;
 
         /// <summary>
         /// IblModelName control.
@@ -186,13 +195,13 @@ namespace Takealot
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
-        /// IblProductType control.
+        /// ProductType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label IblProductType;
+        protected global::System.Web.UI.WebControls.Label ProductType;
 
         /// <summary>
         /// txtProductType control.

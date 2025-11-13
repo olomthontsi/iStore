@@ -210,4 +210,72 @@
 
     <asp:Button ID="btnAdd" class="update-btn" runat="server" Text="Add User" OnClick="btnAdd_Click" />
           </div>
+    <div>
+
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="User_Id" HeaderText="User_Id" SortExpression="User_Id" />
+                <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username" />
+                <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
+                <asp:BoundField DataField="Phone_Number" HeaderText="Phone_Number" SortExpression="Phone_Number" />
+                <asp:BoundField DataField="Day" HeaderText="Day" SortExpression="Day" />
+                <asp:BoundField DataField="Month" HeaderText="Month" SortExpression="Month" />
+                <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
+                <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+                <asp:BoundField DataField="Suburb" HeaderText="Suburb" SortExpression="Suburb" />
+                <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
+                <asp:BoundField DataField="Country" HeaderText="Country" SortExpression="Country" />
+                <asp:BoundField DataField="PostalCode" HeaderText="PostalCode" SortExpression="PostalCode" />
+                <asp:BoundField DataField="Province" HeaderText="Province" SortExpression="Province" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Users] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Users] ([Id], [User_Id], [Username], [FirstName], [LastName], [Email], [Password], [Phone_Number], [Day], [Month], [Year], [Address], [Suburb], [City], [Country], [PostalCode], [Province]) VALUES (@Id, @User_Id, @Username, @FirstName, @LastName, @Email, @Password, @Phone_Number, @Day, @Month, @Year, @Address, @Suburb, @City, @Country, @PostalCode, @Province)" SelectCommand="SELECT [Id], [User_Id], [Username], [FirstName], [LastName], [Email], [Password], [Phone_Number], [Day], [Month], [Year], [Address], [Suburb], [City], [Country], [PostalCode], [Province] FROM [Users]" UpdateCommand="UPDATE [Users] SET [User_Id] = @User_Id, [Username] = @Username, [FirstName] = @FirstName, [LastName] = @LastName, [Email] = @Email, [Password] = @Password, [Phone_Number] = @Phone_Number, [Day] = @Day, [Month] = @Month, [Year] = @Year, [Address] = @Address, [Suburb] = @Suburb, [City] = @City, [Country] = @Country, [PostalCode] = @PostalCode, [Province] = @Province WHERE [Id] = @Id">
+            <DeleteParameters>
+                <asp:Parameter Name="Id" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:controlParameter ControlID="txtID" Name="Id" Type="Int32" />
+                <asp:controlParameter ControlID="txtuserid" Name="User_Id" Type="String" />
+                <asp:controlParameter ControlID="txtUsername" Name="Username" Type="String" />
+                <asp:controlParameter ControlID="txtName" Name="FirstName" Type="String" />
+                <asp:controlParameter ControlID="txtLastName" Name="LastName" Type="String" />
+                <asp:controlParameter ControlID="txtEmail" Name="Email" Type="String" />
+                <asp:controlParameter ControlID="TxtPassword" Name="Password" Type="String" />
+                <asp:controlParameter ControlID="txtPhoneNumber" Name="Phone_Number" Type="String" />
+                <asp:controlParameter ControlID="txtDay" Name="Day" Type="Int32" />
+                <asp:controlParameter ControlID="txtMonth" Name="Month" Type="String" />
+                <asp:controlParameter ControlID="txtYear" Name="Year" Type="String" />
+                <asp:controlParameter ControlID="txtAddress" Name="Address" Type="String" />
+                <asp:controlParameter ControlID="txtSuburb" Name="Suburb" Type="String" />
+                <asp:controlParameter ControlID="txtCity" Name="City" Type="String" />
+                <asp:controlParameter ControlID="txtCountry" Name="Country" Type="String" />
+                <asp:controlParameter ControlID="txtPostalCode" Name="PostalCode" Type="String" />
+                <asp:controlParameter ControlID="txtProvince" Name="Province" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="User_Id" Type="String" />
+                <asp:Parameter Name="Username" Type="String" />
+                <asp:Parameter Name="FirstName" Type="String" />
+                <asp:Parameter Name="LastName" Type="String" />
+                <asp:Parameter Name="Email" Type="String" />
+                <asp:Parameter Name="Password" Type="String" />
+                <asp:Parameter Name="Phone_Number" Type="String" />
+                <asp:Parameter Name="Day" Type="Int32" />
+                <asp:Parameter Name="Month" Type="String" />
+                <asp:Parameter Name="Year" Type="String" />
+                <asp:Parameter Name="Address" Type="String" />
+                <asp:Parameter Name="Suburb" Type="String" />
+                <asp:Parameter Name="City" Type="String" />
+                <asp:Parameter Name="Country" Type="String" />
+                <asp:Parameter Name="PostalCode" Type="String" />
+                <asp:Parameter Name="Province" Type="String" />
+                <asp:Parameter Name="Id" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+
+    </div>
     </asp:Content>

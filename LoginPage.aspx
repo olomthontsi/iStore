@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="loginPageContent">
         <div class="wallpaper">
-            <video autoplay muted loop playsinline class="background-video">
+            <video autoplay muted loop playsinline="playsinline" class="background-video">
                 <source src="images/istore.mp4" type="video/mp4">
 
             </video>
@@ -45,18 +45,17 @@
            </div>
             <div class="divider"></div>
             <div class="register-section">
-                <span class="register-text">Don't have an acc<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Visible="False">
+                <span class="register-text">Don't have an acc<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Visible="False" DataKeyNames="Id">
                     <Columns>
+                        <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" ReadOnly="True" />
                         <asp:BoundField DataField="User_Id" HeaderText="User_Id" SortExpression="User_Id" />
-                        <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                        <asp:BoundField DataField="Last_Name" HeaderText="Last_Name" SortExpression="Last_Name" />
-                        <asp:BoundField DataField="User_Name" HeaderText="User_Name" SortExpression="User_Name" />
-                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                        <asp:BoundField DataField="password" HeaderText="password" SortExpression="password" />
-                        <asp:BoundField DataField="Phone_Number" HeaderText="Phone_Number" SortExpression="Phone_Number" />
+                        <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username" />
+                        <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                        <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                        <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [User_Id], [Name], [Last_Name], [User_Name], [Email], [password], [Phone_Number] FROM [Users]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [User_Id], [Username], [FirstName], [LastName], [Password] FROM [Users]"></asp:SqlDataSource>
                 ount? </span>
                 <a href="membership.aspx" class="register-link">Register</a>
             </div>

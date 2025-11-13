@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Takealot
 {
@@ -13,5 +14,13 @@ namespace Takealot
 		{
 
 		}
-	}
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
+            
+        }
+
+  
+    }
 }

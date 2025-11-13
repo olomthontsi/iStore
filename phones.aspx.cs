@@ -18,7 +18,7 @@ namespace Takealot
                 string series = Request.QueryString["series"];
                 if (!string.IsNullOrEmpty(series))
                 {
-                    lblTitle.Text = series.Replace("iphone", "iPhone ").ToUpper();
+                    //lblTitle.Text = series.Replace("iphone", "iPhone ").ToUpper();
                     LoadPhones(series);
                 }
             }
@@ -35,8 +35,8 @@ namespace Takealot
                     cmd.Parameters.AddWithValue("@Keyword", series);
                     con.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
-                    rptPhones.DataSource = reader;
-                    rptPhones.DataBind();
+                    //rptPhones.DataSource = reader;
+                    //rptPhones.DataBind();
                 }
             }
         }

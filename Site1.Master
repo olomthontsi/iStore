@@ -27,10 +27,10 @@
 
                 <ul class="navbar-nav m-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="mac.aspx">Mac</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Watch</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">AirPods</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ipad.aspx">iPad</a></li>
+                     <li class="nav-item"><a class="nav-link" href="Watches.aspx">Watches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Iphone.aspx">iPhone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Airpods.aspx">AirPods</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.aspx">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact us.aspx">Contact Us</a></li>
                 </ul>
@@ -72,19 +72,17 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h5>Shop iStore</h5>
-                <p><a href="#">Mac</a></p>
-                <p><a href="#">iPhone</a></p>
-                <p><a href="#">iPad</a></p>
-                <p><a href="#">Watches</a></p>
-                <p><a href="#">AirPods</a></p>
-                <p><a href="#">Accessories</a></p>
+                <p><a href="mac.aspx">Mac</a></p>
+                <p><a href="Iphone.aspx">iPhone</a></p>
+                <p><a href="Ipad.aspx">iPad</a></p>
+                  <p><a href="Watches.aspx">Watches</a></p>
+                <p><a href="Airpods.aspx">AirPods</a></p>
             </div>
 
             <div class="footer-column">
                 <h5>Information</h5>
                 <p><a href="aboutus.aspx">About Us</a></p>
                 <p><a href="contact us.aspx">Contact Us</a></p>
-                <p><a href="#">FAQ</a></p>
                 <p><a href="Terms&Conditions.aspx">Terms & Conditions</a></p>
             </div>
 

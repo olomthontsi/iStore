@@ -13,5 +13,19 @@ namespace Takealot
         {
 
         }
+
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+            int i;
+            foreach (DataListItem Item in DataList1.Items)
+            {
+                DataList1.SelectedIndex = e.Item.ItemIndex;
+                i = DataList1.SelectedIndex;
+
+                Session["productcode"] = ((Label)DataList1.SelectedItem.FindControl("Product_CodeLabel")).Text;
+
+            }
+            Response.Redirect("details.aspx");
+        }
     }
 }

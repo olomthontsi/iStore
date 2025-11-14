@@ -3,6 +3,33 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="/Styles/inam2.css" />
+    <style type="text/css">
+        .newStyle1 {
+            font-weight: bold;
+        }
+        .newStyle2 {
+            font-style: italic;
+            font-weight: bold;
+        }
+        .newStyle3 {
+            font-size: large;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        .newStyle4 {
+            font-size: medium;
+            color: #6C757D;
+        }
+        .newStyle5 {
+            color: #86B7FE;
+            font-size: x-small;
+        }
+        .newStyle6 {
+            color: #86B7FE;
+            font-size: small;
+        }
+    </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,14 +45,9 @@
                         ImageUrl='<%# Eval("Images") %>' AlternateText="Product Image" Width="200px" Height="200px" />
 
                     <div class="product-info">
-                        <h3><%# Eval("Model_Name") %></h3>
-                        <p class="product-code"> <%# Eval("Product_Code") %></p>
-                        <p> <%# Eval("Storage_capacity") %></p>
-                        <p> <%# Eval("Colour") %></p>
-                        <p> R <%# Eval("Price") %></p>
-                        <p> <%# Eval("Quantity") %></p>
-                        <p> <%# Eval("Product_Type") %></p>
-                        <p> <%# Eval("Description") %></p>
+                        <h3 class="newStyle3"><%# Eval("Model_Name") %></h3>
+                         <p class="newStyle4"> R <%# Eval("Price") %></p>
+                        <p class="newStyle6"> <%# Eval("Storage_capacity") %></p>
                     </div>
 
                     <div class="product-actions">

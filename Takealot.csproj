@@ -48,6 +48,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -59,16 +62,46 @@
     <Content Include="aboutus.aspx" />
     <Content Include="add.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="Airpods.aspx" />
+    <Content Include="contact us.aspx" />
     <Content Include="EditUser.aspx" />
+    <Content Include="images\airgray.png" />
+    <Content Include="images\airpods.jpg" />
+    <Content Include="images\ipadBlue.jpg" />
+    <Content Include="images\iPadBluee.jpg" />
+    <Content Include="images\ipadGold.jpg" />
+    <Content Include="images\ipadGray.jpg" />
+    <Content Include="images\iPadGrey.jpg" />
+    <Content Include="images\iPadPink.jpg" />
+    <Content Include="images\ipadPurple.jpg" />
+    <Content Include="images\iPadYellow.jpg" />
+    <Content Include="images\mac1.jpg" />
+    <Content Include="images\mac2.jpg" />
+    <Content Include="images\mac3.jpg" />
+    <Content Include="images\mac4.jpg" />
+    <Content Include="images\mac5.png" />
+    <Content Include="images\mac6.png" />
+    <Content Include="images\mac7.png" />
+    <Content Include="images\mac8.png" />
+    <Content Include="images\pinkair.png" />
+    <Content Include="images\w1.jpg" />
+    <Content Include="images\w2.jpg" />
+    <Content Include="images\w3.jpg" />
+    <Content Include="images\w4.jpg" />
+    <Content Include="images\w6.jpg" />
+    <Content Include="images\w7.jpg" />
+    <Content Include="images\w8.jpg" />
+    <Content Include="images\w9.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="Ipad.aspx" />
+    <Content Include="Iphone.aspx" />
+    <Content Include="LiyemaStyle.css" />
     <Content Include="mac.aspx" />
-    <Content Include="Phones.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="membership confirmation.aspx" />
-    <Content Include="phones.aspx" />
     <Content Include="search.aspx" />
     <Content Include="producttype.aspx" />
     <Content Include="TermsandConditions.aspx" />
@@ -77,12 +110,152 @@
     <Content Include="UpdateProduct.aspx" />
     <Content Include="adminhome.aspx" />
     <Content Include="membership.aspx" />
+    <Content Include="Watches.aspx" />
     <Content Include="Web.config" />
     <Content Include="Styles\inam2.css" />
     <Content Include="Styles\inam3.css" />
     <Content Include="Styles\sitemaster.css" />
     <Content Include="Style.css" />
-    <Content Include="images\**\*" />
+    <Content Include="images\airpods.png" />
+    <Content Include="images\airpodss.mp4" />
+    <Content Include="images\Apple Watch Series 6.jpg" />
+    <Content Include="images\applestore.png" />
+    <Content Include="images\bag.jpg" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\bin.png" />
+    <Content Include="images\BlackAir.png" />
+    <Content Include="images\blueair.png" />
+    <Content Include="images\box.png" />
+    <Content Include="images\business.png" />
+    <Content Include="images\car.png" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\cartt.png" />
+    <Content Include="images\click.png" />
+    <Content Include="images\clock.png" />
+    <Content Include="images\CONTACT.jpg" />
+    <Content Include="images\customers.jpg" />
+    <Content Include="images\customers.png" />
+    <Content Include="images\delivery.png" />
+    <Content Include="images\email.png" />
+    <Content Include="images\employees.png" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\fb.jpg" />
+    <Content Include="images\greenair.png" />
+    <Content Include="images\hi.png" />
+    <Content Include="images\hiii.png" />
+    <Content Include="images\hours.jpg" />
+    <Content Include="images\images.png" />
+    <Content Include="images\Inam.png" />
+    <Content Include="images\insta.png" />
+    <Content Include="images\instag.png" />
+    <Content Include="images\IPHONE BANNER.png" />
+    <Content Include="images\iphone17series.png" />
+    <Content Include="images\istore slide 1.png" />
+    <Content Include="images\istore slide 2.png" />
+    <Content Include="images\istore slide 3.png" />
+    <Content Include="images\istore slide 4.png" />
+    <Content Include="images\istore slide 5.png" />
+    <Content Include="images\istore slide 6.png" />
+    <Content Include="images\istore slide 7.png" />
+    <Content Include="images\istore.mp4" />
+    <Content Include="images\linkedin.png" />
+    <Content Include="images\liyema.png" />
+    <Content Include="images\location.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\LOGINN.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mila.png" />
+    <Content Include="images\offers.png" />
+    <Content Include="images\olo.png" />
+    <Content Include="images\online.png" />
+    <Content Include="images\orders.jpg" />
+    <Content Include="images\orders.png" />
+    <Content Include="images\phone.png" />
+    <Content Include="images\products\airpods.jpg" />
+    <Content Include="images\products\airpods4.png" />
+    <Content Include="images\products\airpodsmax.jpeg" />
+    <Content Include="images\products\airtag.png" />
+    <Content Include="images\products\Apple HomePod.jpg" />
+    <Content Include="images\products\appletv.jpg" />
+    <Content Include="images\products\DJIosmo.png" />
+    <Content Include="images\products\gopro.jpg" />
+    <Content Include="images\products\imac.png" />
+    <Content Include="images\products\imacblue.jpeg" />
+    <Content Include="images\products\imacgreen.png" />
+    <Content Include="images\products\imacpink.jpg" />
+    <Content Include="images\products\ipadairblue.jpg" />
+    <Content Include="images\products\ipadairgold.jpg" />
+    <Content Include="images\products\ipadairgrey.jpg" />
+    <Content Include="images\products\ipadairpurple.png" />
+    <Content Include="images\products\ipadblue.jpg" />
+    <Content Include="images\products\ipadgray.jpg" />
+    <Content Include="images\products\ipadgreen.jpg" />
+    <Content Include="images\products\ipadpurple.jpg" />
+    <Content Include="images\products\iphone12.jpg" />
+    <Content Include="images\products\iphone12green.jpg" />
+    <Content Include="images\products\iphone12prooo.png" />
+    <Content Include="images\products\iphone12prr.jpg" />
+    <Content Include="images\products\iphone12purple.jpg" />
+    <Content Include="images\products\iphone13black.jpg" />
+    <Content Include="images\products\iphone13blue.jpg" />
+    <Content Include="images\products\iphone13promaxblack.jpg" />
+    <Content Include="images\products\iphone13promaxblack.png" />
+    <Content Include="images\products\iphone13promaxblue.jpg" />
+    <Content Include="images\products\iphone13promaxgreen.jpg" />
+    <Content Include="images\products\iphone13promaxwhite.jpg" />
+    <Content Include="images\products\iphone13white.jpg" />
+    <Content Include="images\products\iphone14black.jpg" />
+    <Content Include="images\products\iphone14blue.jpg" />
+    <Content Include="images\products\iphone14problack.jpg" />
+    <Content Include="images\products\iphone14problackk.jpg" />
+    <Content Include="images\products\iphone14progold.jpg" />
+    <Content Include="images\products\iphone14progreen.jpg" />
+    <Content Include="images\products\iphone14promax.jpg" />
+    <Content Include="images\products\iphone14propurple.jpg" />
+    <Content Include="images\products\iphone14prored.jpg" />
+    <Content Include="images\products\iphone14red.jpg" />
+    <Content Include="images\products\iphone15black.jpg" />
+    <Content Include="images\products\iphone15blue.jpg" />
+    <Content Include="images\products\iphone15green.jpg" />
+    <Content Include="images\products\iphone15problack.jpg" />
+    <Content Include="images\products\iphone15promax %281%29.jpg" />
+    <Content Include="images\products\iphone15propurple.jpg" />
+    <Content Include="images\products\iphone15prosilver.jpg" />
+    <Content Include="images\products\iphone15prowhite.jpg" />
+    <Content Include="images\products\iphone16black.png" />
+    <Content Include="images\products\iphone16pink.png" />
+    <Content Include="images\products\iphone16problack.png" />
+    <Content Include="images\products\iphone16progold.png" />
+    <Content Include="images\products\iphone16prowhite.png" />
+    <Content Include="images\products\iphone16white.png" />
+    <Content Include="images\products\iphone17black.jpg" />
+    <Content Include="images\products\iphone17green.jpg" />
+    <Content Include="images\products\iphone17problue.jpg" />
+    <Content Include="images\products\iphone17progold.jpg" />
+    <Content Include="images\products\iphone17prosilver.jpg" />
+    <Content Include="images\products\iphone17silver.jpg" />
+    <Content Include="images\products\iphoneairblack.jpg" />
+    <Content Include="images\products\iphoneairblue.jpg" />
+    <Content Include="images\products\iphoneairwhite.jpg" />
+    <Content Include="images\products\iphoneblack13.jpg" />
+    <Content Include="images\products\iphonegreejn.png" />
+    <Content Include="images\products\iphonered13.jpg" />
+    <Content Include="images\products\iphonr12proo.jpg" />
+    <Content Include="images\products\pouch.png" />
+    <Content Include="images\purpleair.png" />
+    <Content Include="images\redair.png" />
+    <Content Include="images\repairs.png" />
+    <Content Include="images\sales.jpg" />
+    <Content Include="images\sales.png" />
+    <Content Include="images\sim.png" />
+    <Content Include="images\Tech.png" />
+    <Content Include="images\tradein.png" />
+    <Content Include="images\TWITTER.jpeg" />
+    <Content Include="images\wapp.png" />
+    <Content Include="images\warranty.png" />
+    <Content Include="images\yellowair.png" />
+    <Content Include="images\YT.png" />
+    <Content Include="images\airpodswhite.png" />
     <Content Include="App_Data\istore.mdf" />
     <Content Include="App_Data\istore_log.ldf">
       <DependentUpon>istore.mdf</DependentUpon>
@@ -90,6 +263,16 @@
   </ItemGroup>
   <ItemGroup>
     <!-- All code-behind files -->
+    <Compile Include="aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addnewproduct.aspx.designer.cs">
+      <DependentUpon>addnewproduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,6 +286,51 @@
     </Compile>
     <Compile Include="adminhome.aspx.designer.cs">
       <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airpods.aspx.cs">
+      <DependentUpon>Airpods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airpods.aspx.designer.cs">
+      <DependentUpon>Airpods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact us.aspx.cs">
+      <DependentUpon>contact us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact us.aspx.designer.cs">
+      <DependentUpon>contact us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ipad.aspx.cs">
+      <DependentUpon>Ipad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ipad.aspx.designer.cs">
+      <DependentUpon>Ipad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iphone.aspx.cs">
+      <DependentUpon>Iphone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iphone.aspx.designer.cs">
+      <DependentUpon>Iphone.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
@@ -118,12 +346,26 @@
     <Compile Include="mac.aspx.designer.cs">
       <DependentUpon>mac.aspx</DependentUpon>
     </Compile>
+    <Compile Include="membership confirmation.aspx.cs">
+      <DependentUpon>membership confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership confirmation.aspx.designer.cs">
+      <DependentUpon>membership confirmation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="membership.aspx.cs">
       <DependentUpon>membership.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="membership.aspx.designer.cs">
       <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -154,9 +396,8 @@
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Phones.aspx.cs">
-      <DependentUpon>Phones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="TermsandConditions.aspx.designer.cs">
+      <DependentUpon>TermsandConditions.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateProduct.aspx.cs">
       <DependentUpon>UpdateProduct.aspx</DependentUpon>
@@ -174,9 +415,29 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="viewall.aspx.designer.cs">
+      <DependentUpon>viewall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewcart.aspx.cs">
+      <DependentUpon>viewcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewcart.aspx.designer.cs">
+      <DependentUpon>viewcart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Watches.aspx.cs">
+      <DependentUpon>Watches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Watches.aspx.designer.cs">
+      <DependentUpon>Watches.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

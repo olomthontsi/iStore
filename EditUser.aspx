@@ -145,13 +145,13 @@
          <table style="width: 100%;">
              <tr>
                  <td class="text-end">
-                     <asp:Label ID="IblSearchById" CssClass="Ibl1" runat="server" Text="Search By Identity No"></asp:Label>
+                     <asp:Label ID="IblSearchById" CssClass="Ibl1" runat="server" Text="Search By User Identity"></asp:Label>
                  </td>
 
                  <td class="auto-style1">
                      &nbsp;</td>
                                     <td>
-                    <asp:TextBox ID="txtSearchById" CssClass="txt" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSearchByUserId" CssClass="txt" runat="server"></asp:TextBox>
                     <asp:Button ID="btnSearch" CssClass="newStyle1" runat="server" Text="Search" Height="38px" Width="116px" />
                  </td>
              </tr>
@@ -279,7 +279,7 @@
           <asp:Label ID="IblCity" CssClass="Ibl" runat="server" Text="City"></asp:Label>
             </td>
             <td class="auto-style1">
-        &nbsp;</td>
+                &nbsp;</td>
                <td>
              <asp:TextBox ID="txtCity" CssClass="txt"  runat="server"></asp:TextBox>
                    </td>
@@ -289,7 +289,7 @@
             <asp:Label ID="IblPostalCode" CssClass="Ibl" runat="server" Text="Postal Code"></asp:Label>
             </td>
             <td class="auto-style1">
-        &nbsp;</td>
+                &nbsp;</td>
 
            <td>
                 <asp:TextBox ID="txtPostalCode" CssClass="txt"  runat="server"></asp:TextBox>
@@ -300,7 +300,7 @@
                 <asp:Label ID="IblCountry" CssClass="Ibl" runat="server" Text="Country"></asp:Label>
             </td>
             <td class="auto-style1">
-        &nbsp;</td>
+                &nbsp;</td>
                <td>
             <asp:TextBox ID="txtCountry" CssClass="txt"  runat="server"></asp:TextBox>
             </td>
@@ -310,22 +310,89 @@
         <asp:Label ID="IblProvince" CssClass="Ibl" runat="server" Text="Province"></asp:Label>
                 </td>
             <td class="auto-style1">
-            &nbsp;</td>
+                &nbsp;</td>
                   <td>
                   <asp:TextBox ID="txtProvince" CssClass="txt"  runat="server"></asp:TextBox>
           </td>
             </tr>
            <tr>
               <td>
-             &nbsp;</td>
+                  &nbsp;</td>
                            <td>
-             &nbsp;</td>
+                               &nbsp;</td>
                            <td>
-                               <asp:Button ID="btnEdit" CssClass="newStyle1" runat="server" Text="Edit User" Height="35px" Width="300px" />
+                               <asp:Button ID="btnEdit" CssClass="newStyle1" runat="server" Text="Edit User" Height="35px" Width="300px" OnClick="btnEdit_Click" />
                         </td>
      </tr>
          </table>
          <br />
+              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnRowDataBound="GridView1_RowDataBound1" Visible="False">
+                  <Columns>
+                      <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+                      <asp:BoundField DataField="User_Id" HeaderText="User_Id" SortExpression="User_Id" />
+                      <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username" />
+                      <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                      <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                      <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                      <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
+                      <asp:BoundField DataField="Phone_Number" HeaderText="Phone_Number" SortExpression="Phone_Number" />
+                      <asp:BoundField DataField="Day" HeaderText="Day" SortExpression="Day" />
+                      <asp:BoundField DataField="Country" HeaderText="Country" SortExpression="Country" />
+                      <asp:BoundField DataField="Month" HeaderText="Month" SortExpression="Month" />
+                      <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
+                      <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+                      <asp:BoundField DataField="Suburb" HeaderText="Suburb" SortExpression="Suburb" />
+                      <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
+                      <asp:BoundField DataField="PostalCode" HeaderText="PostalCode" SortExpression="PostalCode" />
+                      <asp:BoundField DataField="Province" HeaderText="Province" SortExpression="Province" />
+                  </Columns>
+              </asp:GridView>
+              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Users] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Users] ([Id], [User_Id], [Username], [FirstName], [Email], [LastName], [Password], [Phone_Number], [Day], [Country], [Month], [Year], [Address], [Suburb], [City], [PostalCode], [Province]) VALUES (@Id, @User_Id, @Username, @FirstName, @Email, @LastName, @Password, @Phone_Number, @Day, @Country, @Month, @Year, @Address, @Suburb, @City, @PostalCode, @Province)" SelectCommand="SELECT [Id], [User_Id], [Username], [FirstName], [Email], [LastName], [Password], [Phone_Number], [Day], [Country], [Month], [Year], [Address], [Suburb], [City], [PostalCode], [Province] FROM [Users] WHERE ([User_Id] = @User_Id)" UpdateCommand="UPDATE [Users] SET [User_Id] = @User_Id, [Username] = @Username, [FirstName] = @FirstName, [Email] = @Email, [LastName] = @LastName, [Password] = @Password, [Phone_Number] = @Phone_Number, [Day] = @Day, [Country] = @Country, [Month] = @Month, [Year] = @Year, [Address] = @Address, [Suburb] = @Suburb, [City] = @City, [PostalCode] = @PostalCode, [Province] = @Province WHERE [Id] = @Id">
+                  <DeleteParameters>
+                      <asp:Parameter Name="Id" Type="Int32" />
+                  </DeleteParameters>
+                  <InsertParameters>
+                      <asp:Parameter Name="Id" Type="Int32" />
+                      <asp:Parameter Name="User_Id" Type="String" />
+                      <asp:Parameter Name="Username" Type="String" />
+                      <asp:Parameter Name="FirstName" Type="String" />
+                      <asp:Parameter Name="Email" Type="String" />
+                      <asp:Parameter Name="LastName" Type="String" />
+                      <asp:Parameter Name="Password" Type="String" />
+                      <asp:Parameter Name="Phone_Number" Type="String" />
+                      <asp:Parameter Name="Day" Type="Int32" />
+                      <asp:Parameter Name="Country" Type="String" />
+                      <asp:Parameter Name="Month" Type="String" />
+                      <asp:Parameter Name="Year" Type="String" />
+                      <asp:Parameter Name="Address" Type="String" />
+                      <asp:Parameter Name="Suburb" Type="String" />
+                      <asp:Parameter Name="City" Type="String" />
+                      <asp:Parameter Name="PostalCode" Type="String" />
+                      <asp:Parameter Name="Province" Type="String" />
+                  </InsertParameters>
+                  <SelectParameters>
+                      <asp:ControlParameter ControlID="txtSearchByUserId" Name="User_Id" PropertyName="Text" Type="String" />
+                  </SelectParameters>
+                  <UpdateParameters>
+                      <asp:controlParameter ControlId="txtUserID" Name="User_Id" Type="String" />
+                      <asp:controlParameter ControlId="txtUserName" Name="Username" Type="String" />
+                      <asp:controlParameter ControlId="txtFirstName" Name="FirstName" Type="String" />
+                      <asp:controlParameter ControlId="txtEmailAddress" Name="Email" Type="String" />
+                      <asp:controlParameter ControlId="txtLastName" Name="LastName" Type="String" />
+                      <asp:controlParameter ControlId="txtPassword" Name="Password" Type="String" />
+                      <asp:controlParameter ControlId="txtPhoneNumber" Name="Phone_Number" Type="String" />
+                      <asp:controlParameter ControlId="txtDay" Name="Day" Type="Int32" />
+                      <asp:controlParameter ControlId="txtCountry" Name="Country" Type="String" />
+                      <asp:controlParameter ControlId="txtMonth" Name="Month" Type="String" />
+                      <asp:controlParameter ControlId="txtYear" Name="Year" Type="String" />
+                      <asp:controlParameter ControlId="txtAddress" Name="Address" Type="String" />
+                      <asp:controlParameter ControlId="txtSuburb" Name="Suburb" Type="String" />
+                      <asp:controlParameter ControlId="txtCity" Name="City" Type="String" />
+                      <asp:controlParameter ControlId="txtPostalCode" Name="PostalCode" Type="String" />
+                      <asp:controlParameter ControlId="txtProvince" Name="Province" Type="String" />
+                      <asp:controlParameter ControlId="txtId" Name="Id" Type="Int32" />
+                  </UpdateParameters>
+              </asp:SqlDataSource>
           </div>
     
 </asp:Content>

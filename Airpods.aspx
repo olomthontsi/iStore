@@ -1,32 +1,120 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Airpods.aspx.cs" Inherits="Takealot.Airpods" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <style type="text/css">
+.product-card {
+    width: 320px;
+    padding: 15px;
+    background: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.newStyle1 {
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Heavy";
+    color: #000000;
+    font-weight: bolder;
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 10px;
+}
+
+        #DataList1 td {
+    text-align: right !important;
+}
+
+        .auto-style1 {
+            font-size: large;
+        }
+        .newStyle2 {
+            color: #0D6EFD;
+        }
+          .product {
+    font-family: 'Abril Fatface', serif;
+    font-size: 70px;
+    margin-top: -7px;
+    color: BLACK;
+  }
+        .auto-style2 {
+            font-family: 'Abril Fatface', serif;
+            font-size: 50px;
+            margin-top: -7px;
+            color: BLACK;
+            text-align: center;
+        }
+          .underline {
+    width: 95%;
+    height: 1px;
+    background-color: #c7b8a8;
+    margin: 5px auto 0;
+  }
+          .hero-video {
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    display: block;
+}
+                  .newStyle3 {
+            color: #0D6EFD;
+        }
+        .auto-style3 {
+            color: #0D6EFD;
+            font-size: 19pt;
+        }
+        .auto-style4 {
+            color: #0D6EFD;
+            font-size: large;
+        }
+        .auto-style5 {
+            font-size: large;
+        }
+
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+              
+    <video class="hero-video" autoplay muted loop>
+  <source src="\images\products\airpods.mp4" type="video/mp4">
+</video>
+    <br />
+      <div class="auto-style2">OUR AIRPODS</div>
+      <div class="underline"></div>
+    <br />
     <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" RepeatDirection="Horizontal" DataSourceID="SqlDataSource1" OnItemCommand="DataList1_ItemCommand1">
         <ItemTemplate>
-         <asp:ImageButton 
+    <br />
+              
+                     <div class="product-card">
+                         
+                        <asp:ImageButton 
+    ID="ImageButton1" 
     runat="server" 
     ImageUrl='<%# Eval("Images") %>' 
     CommandName="ViewDetails"
     CommandArgument='<%# Eval("Product_Code") %>' Height="300px" Width="300px" 
 />
+           
+              <br />
+             <asp:Label ID="Product_CodeLabel" runat="server" Text='<%# Eval("Product_Code") %>' Visible="False" />
             <br />
-&nbsp;<asp:Label ID="Product_CodeLabel" runat="server" Text='<%# Eval("Product_Code") %>' />
+           <strong> <asp:Label ID="Model_NameLabel" runat="server"  Text='<%# Eval("Model_Name") %>' CssClass="newStyle1" />
+                        </strong>
             <br />
-            Model_Name:
-            <asp:Label ID="Model_NameLabel" runat="server" Text='<%# Eval("Model_Name") %>' />
+                         <span class="auto-style3"><em class="auto-style5">R </em></span><asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' CssClass="auto-style4" style="font-style: italic" />
             <br />
-            Product_Type:
-            <asp:Label ID="Product_TypeLabel" runat="server" Text='<%# Eval("Product_Type") %>' />
-            <br />
-            Images:
-            <asp:Label ID="ImagesLabel" runat="server" Text='<%# Eval("Images") %>' />
-            <br />
-            Price:
-            <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
-            <br />
-<br />
+</div>
         </ItemTemplate>
     </asp:DataList>
   <asp:SqlDataSource ID="SqlDataSource1" runat="server"

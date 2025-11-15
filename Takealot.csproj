@@ -67,6 +67,7 @@
     <Content Include="EditUser.aspx" />
     <Content Include="images\airgray.png" />
     <Content Include="images\airpods.jpg" />
+    <Content Include="images\IPAD.mp4" />
     <Content Include="images\ipadBlue.jpg" />
     <Content Include="images\iPadBluee.jpg" />
     <Content Include="images\ipadGold.jpg" />
@@ -84,6 +85,10 @@
     <Content Include="images\mac7.png" />
     <Content Include="images\mac8.png" />
     <Content Include="images\pinkair.png" />
+    <Content Include="images\products\airpods.mp4" />
+    <Content Include="images\products\computer.mp4" />
+    <Content Include="images\products\IPHONE.mp4" />
+    <Content Include="images\products\watch.mp4" />
     <Content Include="images\w1.jpg" />
     <Content Include="images\w2.jpg" />
     <Content Include="images\w3.jpg" />
@@ -92,11 +97,16 @@
     <Content Include="images\w7.jpg" />
     <Content Include="images\w8.jpg" />
     <Content Include="images\w9.jpg" />
+    <Content Include="inam2.css" />
+    <Content Include="inam3.css" />
+    <Content Include="InamStyles.css" />
     <Content Include="index.aspx" />
     <Content Include="Ipad.aspx" />
     <Content Include="Iphone.aspx" />
     <Content Include="LiyemaStyle.css" />
     <Content Include="mac.aspx" />
+    <Content Include="MilaStyles.css" />
+    <Content Include="OlwethuStyles.css" />
     <Content Include="Site1.Master" />
     <Content Include="delete.aspx" />
     <Content Include="details.aspx" />
@@ -104,6 +114,7 @@
     <Content Include="membership confirmation.aspx" />
     <Content Include="search.aspx" />
     <Content Include="producttype.aspx" />
+    <Content Include="sitemaster.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="viewall.aspx" />
     <Content Include="viewcart.aspx" />

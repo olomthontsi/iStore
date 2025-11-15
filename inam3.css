@@ -1,0 +1,173 @@
+﻿
+/* --- Main Admin Container --- */
+.admin-container {
+    justify-content:center;
+    max-width: 1200px;
+    margin: 9px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Titles --- */
+.admin-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2b2d42;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 40px 0 15px 0;
+}
+
+/* --- Delete Section --- */
+.delete-box {
+    background-color: #f8f9fb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.input-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 220px;
+    font-size: 14px;
+}
+
+    .input-field:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 4px rgba(0,123,255,0.4);
+    }
+
+/* --- Buttons --- */
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-delete {
+    background-color: #e63946;
+    color: white;
+}
+
+    .btn-delete:hover {
+        background-color: #d62839;
+    }
+
+.confirmation-text {
+    display: block;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.confirm-buttons {
+    margin-top: 15px;
+}
+
+.btn-yes {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+    .btn-yes:hover {
+        background-color: #218838;
+    }
+
+.btn-no {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .btn-no:hover {
+        background-color: #5a6268;
+    }
+
+/* --- Product List Grid --- */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    width: 220px;
+    padding-bottom: 15px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .product-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+    .product-info p {
+        font-size: 0.9rem;
+        margin: 3px 0;
+        color: #555;
+    }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-card {
+        width: 46%;
+    }
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        width: 100%;
+    }
+}

@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="mac.aspx.cs" Inherits="Takealot.mac" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
             <style type="text/css">
 .product-card {
     width: 320px;

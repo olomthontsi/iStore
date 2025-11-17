@@ -81,6 +81,11 @@
         .auto-style5 {
             font-size: large;
         }
+
+              #DataList1 table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -91,6 +96,8 @@
     <br />
       <div class="auto-style2">OUR IPHONES</div>
       <div class="underline"></div>
+
+    <div class="d-flex justify-content-center">
           <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1" RepeatColumns="4" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
           <ItemTemplate>
               
@@ -123,5 +130,6 @@
                    FROM [Product]
                    WHERE [Product_Type] = 'Iphone'">
 </asp:SqlDataSource>
+        </div>
 
 </asp:Content>

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
             <style type="text/css">
 .product-card {
-    width: 320px;
+    width: 310px;
     padding: 15px;
     background: white;
     text-align: center;
@@ -81,6 +81,11 @@
             font-size: large;
         }
 
+        #DataList1 table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -91,7 +96,8 @@
       <div class="auto-style2">OUR MACS</div>
       <div class="underline"></div>
     <br />
-    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1" RepeatColumns="4" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
+    <div class="d-flex justify-content-center">
+    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1" RepeatColumns="6" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
         <ItemTemplate>
            
                      <div class="product-card">
@@ -122,6 +128,7 @@
                    FROM [Product]
                    WHERE [Product_Type] = 'Computer'">
 </asp:SqlDataSource>
+        </div>
 
 
 </asp:Content>

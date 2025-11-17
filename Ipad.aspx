@@ -81,6 +81,13 @@
         .auto-style5 {
             font-size: large;
         }
+
+        #DataList1 table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -91,34 +98,41 @@
       <div class="auto-style2">OUR IPADS</div>
       <div class="underline"></div>
     <br />
-    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id"  RepeatColumns="4" RepeatDirection="Horizontal" DataSourceID="SqlDataSource1" OnItemCommand="DataList1_ItemCommand">
+
+<div class="d-flex justify-content-center">
+    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id"  
+        RepeatColumns="4" RepeatDirection="Horizontal"
+        DataSourceID="SqlDataSource1" 
+        OnItemCommand="DataList1_ItemCommand">
         <ItemTemplate>
-            
-                     <div class="product-card">
-                         
-                        <asp:ImageButton 
-    ID="ImageButton1" 
-    runat="server" 
-    ImageUrl='<%# Eval("Images") %>' 
-    CommandName="ViewDetails"
-    CommandArgument='<%# Eval("Product_Code") %>' Height="300px" Width="300px" 
-/>
-           
-              <br />
-             <asp:Label ID="Product_CodeLabel" runat="server" Text='<%# Eval("Product_Code") %>' Visible="False" />
-            <br />
-           <strong> <asp:Label ID="Model_NameLabel" runat="server"  Text='<%# Eval("Model_Name") %>' CssClass="newStyle1" />
-                        </strong>
-            <br />
-                         <span class="auto-style3"><em class="auto-style5">R </em></span><asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' CssClass="auto-style4" style="font-style: italic" />
-            <br />
-</div>
+            <div class="product-card">
+                <asp:ImageButton 
+                    ID="ImageButton1" 
+                    runat="server" 
+                    ImageUrl='<%# Eval("Images") %>' 
+                    CommandName="ViewDetails"
+                    CommandArgument='<%# Eval("Product_Code") %>' 
+                    Height="300px" Width="300px" />
+                <br />
+                <asp:Label ID="Product_CodeLabel" runat="server" Text='<%# Eval("Product_Code") %>' Visible="False" />
+                <br />
+                <strong>
+                    <asp:Label ID="Model_NameLabel" runat="server" Text='<%# Eval("Model_Name") %>' CssClass="newStyle1" />
+                </strong>
+                <br />
+                <span class="auto-style3"><em class="auto-style5">R </em></span>
+                <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' CssClass="auto-style4" style="font-style: italic" />
+                <br />
+            </div>
         </ItemTemplate>
-        </asp:DataList>
-  <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-    ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-    SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Images], [Cost_Price]
-                   FROM [Product]
-                   WHERE [Product_Type] = 'iPad'">
-</asp:SqlDataSource>
+    </asp:DataList>
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+        ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+        SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Storage_capacity], [Colour], [Price], [Quantity], [Description], [Product_Type], [Images], [Cost_Price]
+                       FROM [Product]
+                       WHERE [Product_Type] = 'iPad'">
+    </asp:SqlDataSource>
+</div>
+>
 </asp:Content>

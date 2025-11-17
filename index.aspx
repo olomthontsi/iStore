@@ -109,9 +109,12 @@
       </asp:Repeater>
 
       <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        SelectCommand="SELECT MIN(Id) AS Id, Model_Name, MIN(Price) AS Price, MIN(Images) AS Images FROM Product WHERE Model_Name IN ('iPhone 17','iPhone 16','iPhone 17 Pro Max','Apple Airpods Pro','DJI Osmo Mobile 6 Smartphone stablizing Gimbal') GROUP BY Model_Name;">
-      </asp:SqlDataSource>
+    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+    SelectCommand="SELECT MIN(Id) AS Id, Model_Name, MIN(Price) AS Price, MIN(Images) AS Images, MIN(Product_Code) AS Product_Code 
+                   FROM Product 
+                   WHERE Model_Name IN ('iPhone 17','iPhone 16','iPhone 17 Pro Max','Apple Airpods Pro','DJI Osmo Mobile 6 Smartphone stablizing Gimbal') 
+                   GROUP BY Model_Name;">
+</asp:SqlDataSource>
 
       <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
@@ -148,29 +151,34 @@
  <!-- Product Grid -->
 <div class="container mt-4">
   <div class="row">
-    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource2">
+    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource2" OnItemCommand="rptProducts_ItemCommand">
       <ItemTemplate>
-        <div class="col-lg-2 col-md-3 col-sm-6 mb-4" style="flex: 0 0 20%; max-width: 20%;">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-img-container" style="height: 220px; overflow: hidden;">
-              <a href='details.aspx?product=<%# Eval("Id") %>'>
-                <img src='<%# Eval("Images") %>' 
-                     class="card-img-top" 
-                     alt='<%# Eval("Model_Name") %>' 
-                     style="width: 100%; height: 100%; object-fit: cover;" 
-                     loading="lazy" />
-              </a>
-            </div>
-            <div class="card-body text-center">
-              <h6 class="card-title text-truncate"><%# Eval("Model_Name") %></h6>
-              <p class="card-text fw-semibold">R<%# String.Format("{0:N2}", Eval("Price")) %></p>
-              <a href='details.aspx?product=<%# Eval("Id") %>' class="btn btn-primary btn-sm">
-                View Details
-              </a>
-            </div>
-          </div>
-        </div>
-      </ItemTemplate>
+  <div class="col-lg-2 col-md-3 col-sm-6 mb-4" style="flex: 0 0 20%; max-width: 20%;">
+    <div class="card h-100 shadow-sm border-0">
+      <div class="card-img-container" style="height: 220px; overflow: hidden;">
+        <img src='<%# Eval("Images") %>' 
+             class="card-img-top" 
+             alt='<%# Eval("Model_Name") %>' 
+             style="width: 100%; height: 100%; object-fit: cover;" 
+             loading="lazy" />
+      </div>
+      <div class="card-body text-center">
+        <h6 class="card-title text-truncate"><%# Eval("Model_Name") %></h6>
+        <p class="card-text fw-semibold">R<%# String.Format("{0:N2}", Eval("Price")) %></p>
+
+        <asp:LinkButton 
+            ID="lnkViewDetails2" 
+            runat="server" 
+            CssClass="btn btn-primary btn-sm"
+            CommandName="ViewDetails" 
+            CommandArgument='<%# Eval("Product_Code") %>'>
+            View Details
+        </asp:LinkButton>
+
+      </div>
+    </div>
+  </div>
+</ItemTemplate>
     </asp:Repeater>
   </div>
 </div>

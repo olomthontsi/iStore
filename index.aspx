@@ -48,6 +48,17 @@
       height: 180px;
       object-fit: cover;
     }
+
+    .product-name {
+    color: black;           /* Keep text black */
+    text-decoration: none;  /* Remove underline or other decorations */
+    font-weight: normal;    /* Optional: make font normal */
+}
+    .product-card a.product-name,
+.product-card .product-name:hover {
+    color: black;           
+    text-decoration: none;  
+}
   </style>
 
 </asp:Content>
@@ -131,13 +142,13 @@
   <div class="container my-5">
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-sm-12 text-center" style="padding-right: 40px">
-        <a href="phones.aspx?keyword=iphone+17" class="product-link d-block">
+        <a href="search.aspx?keyword=iphone+17" class="product-link d-block">
           <img src="images/iphone17series.png" alt="iPhone 17 Series" loading="lazy">
         </a>
       </div>
 
       <div class="col-md-6 col-sm-12 text-center" style="padding-left: 40px">
-        <a href="phones.aspx?keyword=Apple watch" class="product-link d-block">
+        <a href="search.aspx?keyword=Apple watch" class="product-link d-block">
           <img src="images/Apple Watch Series 6.jpg" alt="Apple Watch Series" loading="lazy">
         </a>
       </div>

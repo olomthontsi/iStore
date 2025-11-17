@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -35,7 +36,25 @@ namespace Takealot
                 GridView1.FooterRow.Cells[5].Text = "Total due";
                 GridView1.FooterRow.Cells[6].Text = grand_total.ToString();
             }
-
         }
+
+        protected void btncart_Click(object sender, EventArgs e)
+        {
+            string connStr = System.Configuration.ConfigurationManager
+                             .ConnectionStrings["ConnectionString"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "DELETE FROM Cart";  // clears the whole table
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            // Refresh the GridView after deleting
+            GridView1.DataBind();
+        }
+
     }
 }

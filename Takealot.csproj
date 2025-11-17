@@ -62,6 +62,7 @@
     <Content Include="aboutus.aspx" />
     <Content Include="add.aspx" />
     <Content Include="addnewproduct.aspx" />
+    <Content Include="Addproduct.aspx" />
     <Content Include="Airpods.aspx" />
     <Content Include="contact us.aspx" />
     <Content Include="EditUser.aspx" />
@@ -131,6 +132,7 @@
     <Content Include="search.aspx" />
     <Content Include="producttype.aspx" />
     <Content Include="sitemaster.css" />
+    <Content Include="Styles\InamStyles.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="viewall.aspx" />
     <Content Include="viewcart.aspx" />
@@ -299,6 +301,13 @@
     </Compile>
     <Compile Include="addnewproduct.aspx.designer.cs">
       <DependentUpon>addnewproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Addproduct.aspx.cs">
+      <DependentUpon>Addproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addproduct.aspx.designer.cs">
+      <DependentUpon>Addproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>

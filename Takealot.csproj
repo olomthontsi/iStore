@@ -115,6 +115,7 @@
     <Content Include="search.aspx" />
     <Content Include="producttype.aspx" />
     <Content Include="sitemaster.css" />
+    <Content Include="Styles\InamStyles.css" />
     <Content Include="TermsandConditions.aspx" />
     <Content Include="viewall.aspx" />
     <Content Include="viewcart.aspx" />

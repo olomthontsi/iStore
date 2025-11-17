@@ -30,5 +30,9 @@
             SelectCommand="SELECT [Id], [Product_Code], [Model_Name], [Colour], [Price], [quantity], [subtotal] FROM [Cart]">
         </asp:SqlDataSource>
     </div>
+    <div>
+
+    <asp:Button ID="btncart" runat="server" Text="Clear cart" CssClass="nice-btn" OnClick="btncart_Click" />
+</div>
 
 </asp:Content>

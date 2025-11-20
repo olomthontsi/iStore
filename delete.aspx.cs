@@ -15,6 +15,8 @@ namespace Takealot
         }
 
         protected void Button1_Click(object sender, EventArgs e)
+
+            //this the section to delete products from database
         {
             lblconfirmation.Visible = true;
             btnno.Visible = true;

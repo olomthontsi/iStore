@@ -16,13 +16,15 @@ namespace Takealot
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
+            //declaration 
             string username;
             string password;
 
-
+            //retrieve values from textboxes
             username = txtusername.Text;
             password = txtpassword.Text;
 
+            //loop through Gridview cells
             for (int i = 0; i < GridView1.Rows.Count; i++)
             {
                 if ((username == GridView1.Rows[i].Cells[2].Text) && (password == GridView1.Rows[i].Cells[5].Text))

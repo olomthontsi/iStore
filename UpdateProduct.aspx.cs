@@ -22,6 +22,8 @@ namespace Takealot
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
+            //code to insert information in the text box 
+
             if (GridView1.Rows.Count > 0)
             {
                 txtId.Text = GridView1.Rows[0].Cells[0].Text;

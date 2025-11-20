@@ -4,6 +4,7 @@
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/Styles/LiyemaStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     .product-link {
@@ -142,13 +143,13 @@
   <div class="container my-5">
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-sm-12 text-center" style="padding-right: 40px">
-        <a href="search.aspx?keyword=iphone+17" class="product-link d-block">
+        <a href="Iphone.aspx" class="product-link d-block">
           <img src="images/iphone17series.png" alt="iPhone 17 Series" loading="lazy">
         </a>
       </div>
 
       <div class="col-md-6 col-sm-12 text-center" style="padding-left: 40px">
-        <a href="search.aspx?keyword=Apple watch" class="product-link d-block">
+        <a href="Watches.aspx" class="product-link d-block">
           <img src="images/Apple Watch Series 6.jpg" alt="Apple Watch Series" loading="lazy">
         </a>
       </div>
@@ -255,7 +256,7 @@
       <div class="row g-4">
         <div class="col-md-6 col-lg-4">
           <div class="p-4 bg-white border rounded-4 h-100 shadow-sm">
-            <h5 class="fw-bold text-primary mb-2">🚚 Delivery Options</h5>
+            <h5 class="fw-bold text-primary mb-2"><i class="fa-solid fa-truck"></i> Delivery Options</h5>
             <p class="text-dark mb-1">Enjoy <strong>RightNow</strong>, same-day, or next-day delivery across major regions.</p>
             <small class="text-muted">Fast, free, and reliable delivery nationwide.</small>
           </div>
@@ -263,7 +264,7 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="p-4 bg-white border rounded-4 h-100 shadow-sm">
-            <h5 class="fw-bold text-primary mb-2">🔁 Trade-In Program</h5>
+            <h5 class="fw-bold text-primary mb-2"><i class="fa-solid fa-rotate"></i>Trade-In Program</h5>
             <p class="text-dark mb-1">Trade your old device for instant credit or save on your next purchase.</p>
             <small class="text-muted">Available online and in-store.</small>
           </div>
@@ -271,7 +272,7 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="p-4 bg-white border rounded-4 h-100 shadow-sm">
-            <h5 class="fw-bold text-primary mb-2">💙 iCare Protection</h5>
+            <h5 class="fw-bold text-primary mb-2"><i class="fa-solid fa-heart"></i> iCare Protection</h5>
             <p class="text-dark mb-1">Extend your warranty and get accidental damage coverage for peace of mind.</p>
             <small class="text-muted">Protect iPhone, Mac, and iPad.</small>
           </div>
@@ -279,7 +280,7 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="p-4 bg-white border rounded-4 h-100 shadow-sm">
-            <h5 class="fw-bold text-primary mb-2">🧰 Tech Support</h5>
+            <h5 class="fw-bold text-primary mb-2"><i class="fa-solid fa-toolbox"></i> Tech Support</h5>
             <p class="text-dark mb-1">Get expert setup, repair, and software assistance — in-store or remotely.</p>
             <small class="text-muted">Apple-certified specialists ready to help.</small>
           </div>
@@ -287,7 +288,7 @@
 
         <div class="col-md-6 col-lg-8">
           <div class="p-4 bg-primary text-white rounded-4 h-100 shadow-sm">
-            <h5 class="fw-bold mb-3">📱 iStore Network Offers</h5>
+            <h5 class="fw-bold mb-3"><i class="fa-solid fa-mobile-screen-button"></i> iStore Network Offers</h5>
             <p class="mb-3">Get the best iPhone and iPad deals with your preferred carrier.</p>
             <div class="d-flex justify-content-center gap-3 flex-wrap">
               <span class="badge rounded-pill text-bg-danger px-3 py-2">Vodacom</span>

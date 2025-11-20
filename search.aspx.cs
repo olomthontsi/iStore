@@ -15,6 +15,9 @@ namespace Takealot
         }
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
+
+            //to capture the product code so we can generate the item
+
             if (e.CommandName == "ViewDetails")
             {
                 string productCode = e.CommandArgument.ToString();

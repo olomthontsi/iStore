@@ -326,7 +326,7 @@
      </tr>
          </table>
          <br />
-              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnRowDataBound="GridView1_RowDataBound1" Visible="False">
+              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnRowDataBound="GridView1_RowDataBound1" >
                   <Columns>
                       <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
                       <asp:BoundField DataField="User_Id" HeaderText="User_Id" SortExpression="User_Id" />

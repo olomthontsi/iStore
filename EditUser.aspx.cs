@@ -12,15 +12,20 @@ namespace Takealot
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+       
 		}
 
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+			SqlDataSource1.Update();
+        }
+       
+
         protected void GridView1_RowDataBound1(object sender, GridViewRowEventArgs e)
-		{
-		
-		if (GridView1.Rows.Count > 0)
-			{
-				txtId.Text = GridView1.Rows[0].Cells[0].Text;
+        {
+            if (GridView1.Rows.Count > 0)
+            {
+                txtId.Text = GridView1.Rows[0].Cells[0].Text;
                 txtUserID.Text = GridView1.Rows[0].Cells[1].Text;
                 txtUserName.Text = GridView1.Rows[0].Cells[2].Text;
                 txtFirstName.Text = GridView1.Rows[0].Cells[3].Text;
@@ -38,11 +43,8 @@ namespace Takealot
                 txtPostalCode.Text = GridView1.Rows[0].Cells[15].Text;
                 txtProvince.Text = GridView1.Rows[0].Cells[16].Text;
             }
-		}
-
-        protected void btnEdit_Click(object sender, EventArgs e)
-        {
-            SqlDataSource1.Update();
         }
     }
+    
+    
 }

@@ -137,7 +137,7 @@
                 <asp:Label ID="IblId" runat="server" Text="ID"></asp:Label>
         <asp:TextBox ID="txtID" runat="server"  Height="36px" Width="53px" Enabled="False"></asp:TextBox>  
         <asp:Label ID="Ibluserid" runat="server" Text="User ID"></asp:Label>
-        <asp:TextBox ID="txtuserid" runat="server" placeholder="Required" Height="36px" Width="91px"></asp:TextBox>  
+        <asp:TextBox ID="txtuserid" runat="server" placeholder="Required" Height="36px" Width="91px" Enabled="False"></asp:TextBox>  
     </div>
 
     <div class="form-row">
